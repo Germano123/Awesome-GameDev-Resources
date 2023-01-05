@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Streams and File IO | Awesome
+Cpp
+Course</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon-dark.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-76LZTVL113"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-76LZTVL113');
+  </script>
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">Awesome
+Cpp
+Course</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li>
+              <a href="/">Courses</a>
+              <ol>
+                <li><a href="md_intro_README.html">Intro to Programming</a></li>
+                <li><a href="md_portfolio_README.html">Portfolio</a></li>
+                <li><a href="md_artificialintelligence_README.html">Artificial Intelligence</a></li>
+              </ol>
+            </li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          Streams and File IO
+        </h1>
+<p>At this point, you already are familiar with the <code>iostream</code> header. But we never discussed what it is properly. It is a basic stream and it has two static variable we already use: <code>cin</code> for reading variables from the console input and <code>cout</code> to output things to console, <a href="https://en.cppreference.com/w/cpp/header/iostream">see details here</a>. It is possible to interact with all streams via the <code>&gt;&gt;</code> and <code>&lt;&lt;</code> operators.</p><p>But C++ have 2 other relevant streams that we need to cover: <a href="https://en.cppreference.com/w/cpp/header/fstream"><code>fstream</code></a> and <a href="https://en.cppreference.com/w/cpp/header/sstream"><code>sstream</code></a>.</p><section id="autotoc_md110"><h2><a href="#autotoc_md110">File streams</a></h2><p>File streams are streams that target files instead of the terminal console. The <a href="https://en.cppreference.com/w/cpp/header/fstream"><code>fstream</code> header</a> describes the file streams and the ways you can interact with it.</p><p>The main differences between console and file streams are:</p><ul><li>You have to target the filesystem path for files because we can manage different files at the same, but for console, you only have one, so you dont need to target which console we are streaming. In order to not mess each target, you have to declare a different variable to store the target and state.</li><li>Files are persistent, so if you write something to them, and try to read from it again, the that will be there saved.</li></ul><p>Files are a kind of resource managed by the operation system. So every time you request something to be read or write, behind the scenes you are requesting something to the operating system, and it can be slow or subject by lock control. When you open a file to be read or write, the OS locks it to avoid problems. You can open a file to be read multiple times simultaneously, but you cannot write more than once. So to avoid problems, after reading or writing the file, you should close the file.</p><pre class="m-code"><span class="w"> </span><span class="p">{</span><span class="n">c</span><span class="o">++</span><span class="p">}</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;fstream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Open the file</span>
+<span class="w">  </span><span class="c1">// this file path is relative to the executable, so be assured it exists in the same folder the executable is placed</span>
+<span class="w">  </span><span class="c1">// fin is the variablename and it is function initialized via a file path to target, but it can be any valid identifier</span>
+<span class="w">  </span><span class="c1">// I am using fin as variable to follow the same metaphor `fin` as `file input` as we have with console input `cin`, </span>
+<span class="w">  </span><span class="n">ifstream</span><span class="w"> </span><span class="n">fin</span><span class="p">(</span><span class="s">&quot;file.txt&quot;</span><span class="p">);</span><span class="w"> </span>
+
+<span class="w">  </span><span class="c1">// Check if the file is open</span>
+<span class="w">  </span><span class="c1">// it is a good practice to check if the file is really there before doing anything</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">fin</span><span class="p">.</span><span class="n">is_open</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Error opening file&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// quits the program with an error code</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Read the contents of the file line by line</span>
+<span class="w">  </span><span class="n">string</span><span class="w"> </span><span class="n">line</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// getline can target streams in general, so you can pass the file stream as a target</span>
+<span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">getline</span><span class="p">(</span><span class="n">fin</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// while the file have lines, read and store the content inside the line variable</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">// output each string into the console</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Close the file</span>
+<span class="w">  </span><span class="n">fin</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></pre></section><section id="autotoc_md111"><h2><a href="#autotoc_md111">String Stream</a></h2><p>The <a href="https://en.cppreference.com/w/cpp/header/sstream"><code>sstream</code> header</a> describes string stream, which is a type of memory stream and is very useful to do string manipulation. For our intent, we aro going to focus 3 types of memory streams.</p><ul><li><code>ostringstream</code>: works just like <code>cout</code> but the content will printed to a memory region.<ul><li>it is more efficient to build a complex string in this way than <code>cout</code>ing multiple times;<br /></li></ul></li><li><code>istringstream</code>: works just like <code>cin</code> but it will read from a memory area.<ul><li>it is safer to read from a closed memory area than, and you ran reset the reading pointer to re-read previous elements easier than with <code>cin</code>.</li></ul></li></ul><pre class="m-code"><span class="w"> </span><span class="p">{</span><span class="n">c</span><span class="o">++</span><span class="p">}</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sstream&gt;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ostringstream</span><span class="w"> </span><span class="n">oss</span><span class="p">;</span><span class="w"> </span><span class="c1">// declare the output stream</span>
+<span class="w">    </span><span class="c1">// print numbers from 0 to 100</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="w">        </span><span class="n">oss</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39; &#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">// store the data into memory</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">oss</span><span class="p">.</span><span class="n">str</span><span class="p">();</span><span class="w"> </span><span class="c1">// convert the stream into a string to be printed all at once</span>
+<span class="p">}</span></pre><pre class="m-code"><span class="w"> </span><span class="p">{</span><span class="n">c</span><span class="o">++</span><span class="p">}</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sstream&gt;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// read input</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">input</span><span class="p">;</span>
+<span class="w">    </span><span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span><span class="w"> </span><span class="n">input</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// initialize string stream with the content from a console line</span>
+<span class="w">    </span><span class="n">istringstream</span><span class="w"> </span><span class="n">ss</span><span class="p">(</span><span class="n">input</span><span class="p">);</span><span class="w"> </span><span class="c1">// declare the stream to read from</span>
+
+<span class="w">    </span><span class="c1">// extract input</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">course</span><span class="p">;</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">grade</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">iss</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">course</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">grade</span><span class="p">;</span>
+<span class="p">}</span></pre><p>You can combine string stream and file stream to read a whole file and store into a single string.</p><pre class="m-code"><span class="w"> </span><span class="p">{</span><span class="n">c</span><span class="o">++</span><span class="p">}</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;fstream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sstream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Open the file</span>
+<span class="w">  </span><span class="n">ifstream</span><span class="w"> </span><span class="n">file</span><span class="p">(</span><span class="s">&quot;file.txt&quot;</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Check if the file is open</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">file</span><span class="p">.</span><span class="n">is_open</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Error opening file&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Read the contents of the file into a stringstream</span>
+<span class="w">  </span><span class="n">stringstream</span><span class="w"> </span><span class="n">ss</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ss</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">file</span><span class="p">.</span><span class="n">rdbuf</span><span class="p">();</span><span class="w"> </span><span class="c1">// read the whole file buffer and stores it into a string stream</span>
+
+<span class="w">  </span><span class="c1">// Close the file</span>
+<span class="w">  </span><span class="n">file</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+
+<span class="w">  </span><span class="c1">// Convert the stringstream into a string</span>
+<span class="w">  </span><span class="n">string</span><span class="w"> </span><span class="n">contents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ss</span><span class="p">.</span><span class="n">str</span><span class="p">();</span>
+
+<span class="w">  </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">contents</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">// prints the whole file at once</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></pre></section><section id="autotoc_md112"><h2><a href="#autotoc_md112">Homework</a></h2><p>You have the job of creating a small program to read a file image in the format PGMA and inverse the colors as a negative image.</p><p>You can test your code with different images if you want. You can download more images <a href="https://people.sc.fsu.edu/~jburkardt/data/pgma/pgma.html">here</a>. But here goes 2 examples:</p><ul><li>Sample input easy: <a href="baboon.ascii.pgm">baboon.ascii.pgm</a> - max intensity is not 255 and don&#x27;t have comments.</li><li>Sample input harder: <a href="lena.ascii.pgm">lena.ascii.pgm</a> - have comments, and the max intensity is different than 255.</li></ul><p>You can test if your output file is correct using <a href="https://www.gimp.org/">this tool</a>. You can open this file via any text reader, use the online viewer, or use any app that reads pnm images.</p><section id="autotoc_md113"><h3><a href="#autotoc_md113">Attention:</a></h3><ul><li>To create the inverse image, you should read the file header and search for the maximum intensity. You should use this number as a base to inverse. In the Lena case, it is 245.</li><li>You should pay attention that every line shouldn&#x27;t be bigger than 70 chars;</li><li>Pay attention that the line 2 might exists or not. And any comment found in the file should be skipped.</li></ul><p>The user should input the filename to be read. So you should store it into a string variable. The output filename should be the same as the input but with &#x27;.inverse&#x27; concatenated in the end. Ex.: lena.pgm becomes lena.inverse.pgm; If you find this too complicated, just concatenate with .inverse.pgm would be acceptable. ex.: lena.pgm becomes lena.pgm.inverse.pgm</p><p>In order for your program to find the file to be read, you should provide the fullpath to the file or simply put the file in the same folder your executable is.</p><p>HINT: In order to find comments and ignore them do something like that:</p><pre class="m-code"><span class="w"> </span><span class="p">{</span><span class="n">c</span><span class="o">++</span><span class="p">}</span>
+<span class="n">string</span><span class="w"> </span><span class="n">widthstr</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">;</span>
+<span class="n">fin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">widthstr</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="n">widthstr</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">==</span><span class="sc">&#39;#&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="n">getline</span><span class="p">(</span><span class="n">fin</span><span class="p">,</span><span class="w"> </span><span class="n">widthstr</span><span class="p">);</span><span class="w"> </span><span class="c1">// ignore line</span>
+<span class="k">else</span>
+<span class="w">    </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stoi</span><span class="p">(</span><span class="n">widthstr</span><span class="p">);</span><span class="w"> </span><span class="c1">// covert string to integer</span></pre></section></section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        Awesome Cpp Course. Created by <a href="https://linktree.com/tolstenko">Alexandre Tolstenko</a> and <a href="https://github.com/InfiniBrains/Introduction-to-Game-Programming-With-CPP/graphs/contributors">Others</a>. 2023. All rights reserved.
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>
