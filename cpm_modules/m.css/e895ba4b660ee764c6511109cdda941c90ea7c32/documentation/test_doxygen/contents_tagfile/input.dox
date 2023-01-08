@@ -1,0 +1,9 @@
+/** @mainpage
+
+See @ref CORRADE_ASSERT() for more information.
+
+@code{.cpp}
+Corrade::Utility::Resource rx;
+@endcode
+
+*/

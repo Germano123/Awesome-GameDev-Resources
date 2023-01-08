@@ -1,0 +1,47 @@
+<table class="m-table build-status">
+  <thead>
+    <tr>
+      <th style="border-bottom-width: 0;"></th>
+      <th>Python<br />3.6</th>
+      <th>Python<br />3.7</th>
+      <th>Python<br />3.8</th>
+      <th>Python<br />3.9</th>
+      <th>Python<br />3.10</th>
+    </tr>
+    <tr>
+      <th class="m-text-right m-text-middle" style="border-top-width: 0;">code coverage</th>
+      <td colspan="5" id="coverage-mcss"><a>&nbsp;<br/><span class="m-text m-small">&nbsp;</span></a></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="m-text-right">Pelican theme</th>
+      <td rowspan="4" id="mcss-py306"><a>&nbsp;<br/><span class="m-text m-small">&nbsp;</span></a></td>
+      <td rowspan="4" id="mcss-py307"><a>&nbsp;<br/><span class="m-text m-small">&nbsp;</span></a></td>
+      <td rowspan="4" id="mcss-py308"><a>&nbsp;<br/><span class="m-text m-small">&nbsp;</span></a></td>
+      <td rowspan="4" id="mcss-py309"><a>&nbsp;<br/><span class="m-text m-small">&nbsp;</span></a></td>
+      <td rowspan="4" id="mcss-py310"><a>&nbsp;<br/><span class="m-text m-small">&nbsp;</span></a></td>
+    </tr>
+    <tr>
+      <th class="m-text-right">Plugins</th>
+    </tr>
+    <tr>
+      <th class="m-text-right">Graph rendering</th>
+    </tr>
+    <tr>
+      <th class="m-text-right">Documentation themes</th>
+    </tr>
+    <tr>
+      <th class="m-text-right">Documentation themes<br/>client search</th>
+      <td id="mcss-js" colspan="5"><a>&nbsp;<br/><span class="m-text m-small">&nbsp;</span></a></td>
+    </tr>
+    <tr>
+      <th class="m-text-right">Math rendering</th>
+      <td class="m-dim"></td>
+      <td class="m-dim"></td>
+      <td class="m-dim"></td>
+      <td class="m-dim"></td>
+      <td class="m-dim"></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles/edit_cache.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles/rebuild_cache.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation/CMakeFiles/GenerateDocs.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation/CMakeFiles/edit_cache.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation/CMakeFiles/rebuild_cache.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/clang-format.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/check-clang-format.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/fix-clang-format.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/cmake-format.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/check-cmake-format.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/format.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/check-format.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/fix-format.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/edit_cache.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/rebuild_cache.dir
