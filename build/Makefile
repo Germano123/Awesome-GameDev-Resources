@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named 01-hello
+
+# Build rule for target.
+01-hello: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 01-hello
+.PHONY : 01-hello
+
+# fast build rule for target.
+01-hello/fast:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/build
+.PHONY : 01-hello/fast
+
+#=============================================================================
 # Target rules for targets named GenerateDocs
 
 # Build rule for target.
@@ -264,6 +277,7 @@ help:
 	@echo "... fix-cmake-format"
 	@echo "... fix-format"
 	@echo "... format"
+	@echo "... 01-hello"
 .PHONY : help
 
 

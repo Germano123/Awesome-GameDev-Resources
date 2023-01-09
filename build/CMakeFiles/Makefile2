@@ -63,14 +63,17 @@ CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-t
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: intro/all
 all: documentation/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: intro/preinstall
 preinstall: documentation/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: intro/clean
 clean: documentation/clean
 clean: _deps/format.cmake-build/clean
 .PHONY : clean
@@ -112,6 +115,62 @@ documentation/preinstall:
 # Recursive "clean" directory target.
 documentation/clean: documentation/CMakeFiles/GenerateDocs.dir/clean
 .PHONY : documentation/clean
+
+#=============================================================================
+# Directory level rules for directory intro
+
+# Recursive "all" directory target.
+intro/all: intro/02-tooling/all
+.PHONY : intro/all
+
+# Recursive "preinstall" directory target.
+intro/preinstall: intro/02-tooling/preinstall
+.PHONY : intro/preinstall
+
+# Recursive "clean" directory target.
+intro/clean: intro/02-tooling/clean
+.PHONY : intro/clean
+
+#=============================================================================
+# Directory level rules for directory intro/02-tooling
+
+# Recursive "all" directory target.
+intro/02-tooling/all: intro/02-tooling/CMakeFiles/01-hello.dir/all
+.PHONY : intro/02-tooling/all
+
+# Recursive "preinstall" directory target.
+intro/02-tooling/preinstall:
+.PHONY : intro/02-tooling/preinstall
+
+# Recursive "clean" directory target.
+intro/02-tooling/clean: intro/02-tooling/CMakeFiles/01-hello.dir/clean
+.PHONY : intro/02-tooling/clean
+
+#=============================================================================
+# Target rules for target intro/02-tooling/CMakeFiles/01-hello.dir
+
+# All Build rule for target.
+intro/02-tooling/CMakeFiles/01-hello.dir/all:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/depend
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=1,2 "Built target 01-hello"
+.PHONY : intro/02-tooling/CMakeFiles/01-hello.dir/all
+
+# Build rule for subdir invocation for target.
+intro/02-tooling/CMakeFiles/01-hello.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/01-hello.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+.PHONY : intro/02-tooling/CMakeFiles/01-hello.dir/rule
+
+# Convenience name for target.
+01-hello: intro/02-tooling/CMakeFiles/01-hello.dir/rule
+.PHONY : 01-hello
+
+# clean rule for target.
+intro/02-tooling/CMakeFiles/01-hello.dir/clean:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/clean
+.PHONY : intro/02-tooling/CMakeFiles/01-hello.dir/clean
 
 #=============================================================================
 # Target rules for target documentation/CMakeFiles/GenerateDocs.dir
@@ -326,8 +385,8 @@ _deps/format.cmake-build/CMakeFiles/format.dir/clean:
 # Target rules for target _deps/format.cmake-build/CMakeFiles/check-format.dir
 
 # All Build rule for target.
-_deps/format.cmake-build/CMakeFiles/check-format.dir/all: _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/all
 _deps/format.cmake-build/CMakeFiles/check-format.dir/all: _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/all
+_deps/format.cmake-build/CMakeFiles/check-format.dir/all: _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-format.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target check-format"
@@ -353,8 +412,8 @@ _deps/format.cmake-build/CMakeFiles/check-format.dir/clean:
 # Target rules for target _deps/format.cmake-build/CMakeFiles/fix-format.dir
 
 # All Build rule for target.
-_deps/format.cmake-build/CMakeFiles/fix-format.dir/all: _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/all
 _deps/format.cmake-build/CMakeFiles/fix-format.dir/all: _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/all
+_deps/format.cmake-build/CMakeFiles/fix-format.dir/all: _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-format.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target fix-format"

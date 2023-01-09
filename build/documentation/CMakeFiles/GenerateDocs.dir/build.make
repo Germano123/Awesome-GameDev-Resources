@@ -67,8 +67,8 @@ include documentation/CMakeFiles/GenerateDocs.dir/compiler_depend.make
 include documentation/CMakeFiles/GenerateDocs.dir/progress.make
 
 documentation/CMakeFiles/GenerateDocs:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP && mkdocs
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP && echo Docs\ written\ to:\ /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation/doxygen
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP && mkdocs build
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP && echo Docs\ written\ to:\ /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation/../site
 
 GenerateDocs: documentation/CMakeFiles/GenerateDocs
 GenerateDocs: documentation/CMakeFiles/GenerateDocs.dir/build.make

@@ -16,6 +16,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../cpm_modules/format.cmake/17e103764947115e78d95ecc29c4bee54dc64e08/CMakeLists.txt"
   "../documentation/CMakeLists.txt"
   "../documentation/Doxyfile"
+  "../intro/02-tooling/CMakeLists.txt"
+  "../intro/CMakeLists.txt"
   "/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
@@ -38,6 +40,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/Compiler/Clang.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake"
   "/usr/share/cmake-3.22/Modules/FetchContent.cmake"
+  "/usr/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in"
   "/usr/share/cmake-3.22/Modules/FindDoxygen.cmake"
   "/usr/share/cmake-3.22/Modules/FindGit.cmake"
   "/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
@@ -56,7 +59,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
+  "_deps/format.cmake-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "intro/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "intro/02-tooling/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/m.css-subbuild/CMakeLists.txt"
   "documentation/Doxyfile"
   "documentation/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/format.cmake-build/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -64,6 +71,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "intro/02-tooling/CMakeFiles/01-hello.dir/DependInfo.cmake"
   "documentation/CMakeFiles/GenerateDocs.dir/DependInfo.cmake"
   "_deps/format.cmake-build/CMakeFiles/clang-format.dir/DependInfo.cmake"
   "_deps/format.cmake-build/CMakeFiles/check-clang-format.dir/DependInfo.cmake"

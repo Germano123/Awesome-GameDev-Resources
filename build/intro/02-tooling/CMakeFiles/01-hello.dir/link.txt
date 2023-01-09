@@ -1,0 +1,1 @@
+/emsdk/upstream/emscripten/em++  -Oz -s WASM=2 @CMakeFiles/01-hello.dir/objects1.rsp -o ../../out/01-hello.js 

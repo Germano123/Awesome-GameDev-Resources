@@ -1,5 +1,10 @@
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles/edit_cache.dir
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles/rebuild_cache.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/CMakeFiles/edit_cache.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/CMakeFiles/rebuild_cache.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/CMakeFiles/01-hello.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/CMakeFiles/edit_cache.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/CMakeFiles/rebuild_cache.dir
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation/CMakeFiles/GenerateDocs.dir
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation/CMakeFiles/edit_cache.dir
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation/CMakeFiles/rebuild_cache.dir
