@@ -1209,7 +1209,10 @@ Inline conditional:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"> </span><span class="c1">// note the inline empty statement here finished with a `;`</span>
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="n">doSomething</span><span class="p">();</span><span class="w"> </span><span class="c1">// this will always happen</span>
 </code></pre></div></p>
-<p>NOTE: It is preferred to always create scopes with <code>{}</code>, but there is no need to have them if you have only one statement that will happen for that condition.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is preferred to always create scopes with <code>{}</code>, but there is no need to have them if you have only one statement that will happen for that condition.</p>
+</div>
 <h2 id="if-else-clause">if-else clause<a class="headerlink" href="#if-else-clause" title="Permanent link">&para;</a></h2>
 <p>All the explanations from <code>if</code> applies here but now we have a fallback case.</p>
 <p><code>if-else</code> statements: These execute a block of code if a certain condition is true, and a different block of code if the condition is false. For example:</p>
@@ -1273,7 +1276,10 @@ Inline conditional:
 <a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="p">}</span>
 </code></pre></div>
 <p>In this example, the output would be "x is 2", as the value of x is 2.</p>
-<p>NOTE: It's important to note that C++ uses strict type checking, so you need to be careful about the types of variables you use in your conditionals. For example, you can't compare a string to an integer using the <code>==</code> operator.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It's important to note that C++ uses strict type checking, so you need to be careful about the types of variables you use in your conditionals. For example, you can't compare a string to an integer using the <code>==</code> operator.</p>
+</div>
 <h3 id="switch-fallthrough">Switch fallthrough<a class="headerlink" href="#switch-fallthrough" title="Permanent link">&para;</a></h3>
 <p>In C++, the <code>break</code> statement is used to exit a <code>switch</code> statement and prevent the code in subsequent cases from being executed. However, sometimes you may want to allow the code in multiple cases to be executed if certain conditions are met. This is known as a "fallthrough" in C++.</p>
 <p>To allow a <code>switch</code> statement to fall through to the next case, you can omit the break statement at the end of the case's code block. The code in the next case will then be executed, and the switch statement will continue to execute until a break statement is encountered or the end of the switch is reached.</p>
@@ -1296,7 +1302,7 @@ Inline conditional:
 <h1 id="homework">Homework<a class="headerlink" href="#homework" title="Permanent link">&para;</a></h1>
 <ul>
 <li>
-<p>Do all exercises up to this topic here https://www.w3schools.com/cpp/exercise.asp</p>
+<p>Do all exercises up to this topic <a href="https://www.w3schools.com/cpp/exercise.asp">here</a>.</p>
 </li>
 <li>
 <p><a href="https://www.beecrowd.com.br/judge/en/problems/view/1041">Coordinates of a Point</a>. In this activity, you will have to code a way to find the quadrant of a given coordinate.</p>

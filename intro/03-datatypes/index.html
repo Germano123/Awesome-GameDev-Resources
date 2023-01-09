@@ -1046,9 +1046,15 @@
 <p>A standard <code>char</code> type uses 1 byte to store data.</p>
 <p>It can represent <code>2^8</code> or <code>256</code> different numbers. By default, in x86 machine char is signed and the represented numbers can go from <code>-2^7</code> or <code>-128</code> up to <code>2^7 - 1</code> or <code>127</code>.</p>
 <p>Chars can be used to represent letters following the <a href="https://www.asciitable.com/">ascii table</a> where each value means a specific letter, digit or symbol.</p>
-<p>NOTE: A <code>char</code> can have different sizes to represent different character coding for different languages. If you are using hebrew, chinese, or others, you probably will need more than 1 byte to represent the chars. Use <code>char8_t</code> (UTF8), <code>char16_t</code>(UTF16) or <code>char36_t</code>(UTF32), to cover your character encoding for the language you are using.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A <code>char</code> can have different sizes to represent different character coding for different languages. If you are using hebrew, chinese, or others, you probably will need more than 1 byte to represent the chars. Use <code>char8_t</code> (UTF8), <code>char16_t</code>(UTF16) or <code>char36_t</code>(UTF32), to cover your character encoding for the language you are using.</p>
+</div>
 <h4 id="integer">Integer<a class="headerlink" href="#integer" title="Permanent link">&para;</a></h4>
-<p>NOTE: Most of the information that I am covering here might be not precise, but the overall idea is correct. If you want a deep dive, <a href="https://en.cppreference.com/w/cpp/language/types">read this</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most of the information that I am covering here might be not precise, but the overall idea is correct. If you want a deep dive, <a href="https://en.cppreference.com/w/cpp/language/types">read this</a>.</p>
+</div>
 <p>A standard <code>int</code> type uses 4 bytes to store data. It is signed by default.</p>
 <p>It can represent <code>2^32</code> or <code>4294967296</code> different numbers. As a signed type, it can represent numbers from <code>-2^31</code> or  <code>-2147483648</code> up to <code>2^31 - 1</code> or <code>2147483647</code>.</p>
 <p>The type <code>int</code> can accept sign modifiers as <code>signed</code> or <code>unsigned</code> to change the behavior of the first bit to act as a sign or not.</p>
@@ -1062,7 +1068,10 @@
 <h4 id="float-pointing">Float pointing<a class="headerlink" href="#float-pointing" title="Permanent link">&para;</a></h4>
 <p>There are 3 basic types of floating point containers: <code>float</code>(4 bytes) and <code>double</code>(8 bytes) and <code>long double</code>(16 bytes) to represent fractional numeric types.</p>
 <p>The <a href="https://en.wikipedia.org/wiki/IEEE_754">standard IEEE754</a> specifies how a floating point number is stored in the form of bits inside the container. The container holds 3 basic information to simulate the behavior of a fractional type inside a binary type: signal, exponent and fraction.</p>
-<p>NOTE: This standard was very open to implementation definition in the past, and this is one of the root causes of non-determinism physics simulation. This is the main problem you cannot guarantee the same operation with the same pair of numbers will consistently give the same result across different types of processors and compilers, thus making the physics of a multiplayer game consistency hardly achievable. Many deterministic physics engines tend to not use this standard at all, and implement those behaviors via software on top of integers instead. There are 2 approaches to solve the floating-point determinism: <a href="https://github.com/ucb-bar/berkeley-softfloat-3">softfloat</a> that implement all the IEEE754 specifications via software, or implement some kind of <a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic">fixed-point arithmetic</a> on top of integers.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This standard was very open to implementation definition in the past, and this is one of the root causes of non-determinism physics simulation. This is the main problem you cannot guarantee the same operation with the same pair of numbers will consistently give the same result across different types of processors and compilers, thus making the physics of a multiplayer game consistency hardly achievable. Many deterministic physics engines tend to not use this standard at all, and implement those behaviors via software on top of integers instead. There are 2 approaches to solve the floating-point determinism: <a href="https://github.com/ucb-bar/berkeley-softfloat-3">softfloat</a> that implement all the IEEE754 specifications via software, or implement some kind of <a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic">fixed-point arithmetic</a> on top of integers.</p>
+</div>
 <h4 id="booleans">Booleans<a class="headerlink" href="#booleans" title="Permanent link">&para;</a></h4>
 <p><code>bool</code> is a special type that has the container size of 1 byte but the compiler can optimize and pack up to 8 <code>bool</code>s in one byte if they are declared in sequence.</p>
 <h4 id="enums">Enums<a class="headerlink" href="#enums" title="Permanent link">&para;</a></h4>
@@ -1108,8 +1117,14 @@
 </code></pre></div>
 <code>TYPENAME</code> can be the name of any predefined type. See <a href="#variable-types">Variable Types</a> for the types.
 <code>VARIABLENAME</code> can be anything as long it follow the naming rules. See <a href="#variable-naming">Variable Naming</a> for the naming rules.</p>
-<p>NOTE: A given variable name can only be declared once in the same context / scope. If you try to redeclare the same variable, the compiler will accuse an error.
-NOTE2: You can redeclare the same variable name in different scopes. If one scope is parent of the other, the current will be used and will shadow the content of the one from outer scope. We are going to cover this more when we are covering multi-file projects and functions.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A given variable name can only be declared once in the same context / scope. If you try to redeclare the same variable, the compiler will accuse an error.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can redeclare the same variable name in different scopes. If one scope is parent of the other, the current will be used and will shadow the content of the one from outer scope. We are going to cover this more when we are covering multi-file projects and functions.</p>
+</div>
 <p>Examples:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w">       </span><span class="c1">// integer variable</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kt">float</span><span class="w"> </span><span class="n">pi</span><span class="p">;</span><span class="w">    </span><span class="c1">// floating-point variable</span>
@@ -1117,7 +1132,10 @@ NOTE2: You can redeclare the same variable name in different scopes. If one scop
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kt">bool</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w">      </span><span class="c1">// boolean variable</span>
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"> </span><span class="c1">// string variable </span>
 </code></pre></div>
-<p>NOTE: We are going to cover later in this course other complex types in other modules such as arrays, pointers and references.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are going to cover later in this course other complex types in other modules such as arrays, pointers and references.</p>
+</div>
 <h1 id="variable-assignment">Variable assignment<a class="headerlink" href="#variable-assignment" title="Permanent link">&para;</a></h1>
 <p><code>=</code> operator means that whatever the container have will be overwritten by the result of the right side statement. You should read it not as <code>equal</code> but as <code>receives</code> to avoid misunderstanding. <a href="https://en.cppreference.com/w/cpp/language/operator_assignment">Reference</a></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">         </span><span class="c1">// integer variable</span>
@@ -1322,7 +1340,7 @@ Note that these manipulators only affect the output stream, and do not modify th
 <a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>Banana<span class="w">   </span>
 </code></pre></div></p>
 <h1 id="optional-exercises">Optional Exercises<a class="headerlink" href="#optional-exercises" title="Permanent link">&para;</a></h1>
-<p>Do all exercises up to this topic here https://www.w3schools.com/cpp/exercise.asp</p>
+<p>Do all exercises up to this topic <a href="https://www.w3schools.com/cpp/exercise.asp">here</a>.</p>
 <p>In order to get into coding, the easiest way to learn is by solving coding challenges. It is like learning any new language, you have to be exposed and involved. Do not do only the homeworks, otherwise you are going to fail. Another metaphor is: the homework is the like a competition that you have to run to prove that you are trained, but in order to train, you have to do small runs and do small steps first, so you have to train yourself ot least 2x per week.</p>
 <p>The best way to train yourself in coding and solving problems in my opinion is this:</p>
 <ol>
