@@ -1103,6 +1103,10 @@
 <h3 id="special-derived-type-string">Special derived type: string<a class="headerlink" href="#special-derived-type-string" title="Permanent link">&para;</a></h3>
 <p><code>string</code> is a derived type and in order to use it, string should be included in the beginning of the file or in the header. <code>char</code> are the basic unit of a <code>string</code> and is used to store words as a sequence of chars.</p>
 <p>In C++, a string is a sequence of characters that is stored in an object of the <code>std::string</code> class. The <code>std::string</code> class is part of the C++ Standard Library and provides a variety of functions and operators for manipulating strings.</p>
+<h3 id="void-type"><code>void type</code><a class="headerlink" href="#void-type" title="Permanent link">&para;</a></h3>
+<p>When <code>void</code> type specifier is used in functions, it indicates that a function does not return a value.</p>
+<p>It can also be used as a placeholder for a pointer to a memory location to indicate that the pointer is "universal" and can point to data of any type, but this can be arguably a bad pattern, and should be used exceptionally when interchanging types with c-style API.</p>
+<p>We are going to cover this again when covering <a href="../06-functions/">pointers and functions</a>.</p>
 <h2 id="variable-naming">Variable Naming<a class="headerlink" href="#variable-naming" title="Permanent link">&para;</a></h2>
 <p>Variable names are called identifiers. In C++, you can use any combination of letters, digits, and underscores to name a variable, it should follow some rules:
 - Variables can have numbers, en any position, except the first character, so the name does not begin with a digit. Ex. <code>point2</code> and <code>vector2d</code> are allowed, but <code>9life</code> isn't;
