@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://courses.tolstenko.net/artificialintelligence/animation/</loc>
+         <lastmod>2023-01-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://courses.tolstenko.net/cpm_modules/format.cmake/17e103764947115e78d95ecc29c4bee54dc64e08/</loc>
          <lastmod>2023-01-10</lastmod>
          <changefreq>daily</changefreq>
