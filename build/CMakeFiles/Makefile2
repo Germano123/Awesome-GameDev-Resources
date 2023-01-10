@@ -358,8 +358,8 @@ _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/clean:
 # Target rules for target _deps/format.cmake-build/CMakeFiles/format.dir
 
 # All Build rule for target.
-_deps/format.cmake-build/CMakeFiles/format.dir/all: _deps/format.cmake-build/CMakeFiles/clang-format.dir/all
 _deps/format.cmake-build/CMakeFiles/format.dir/all: _deps/format.cmake-build/CMakeFiles/cmake-format.dir/all
+_deps/format.cmake-build/CMakeFiles/format.dir/all: _deps/format.cmake-build/CMakeFiles/clang-format.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/format.dir/build.make _deps/format.cmake-build/CMakeFiles/format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/format.dir/build.make _deps/format.cmake-build/CMakeFiles/format.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target format"

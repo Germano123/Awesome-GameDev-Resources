@@ -1036,15 +1036,22 @@
 <h3 id="numeric-types">Numeric types<a class="headerlink" href="#numeric-types" title="Permanent link">&para;</a></h3>
 <p>There are some basic integer container types with different sizes. It can have some type modifiers to change the default behavior or the type.</p>
 <p>The common size of the integer containers are <code>1</code>(<code>char</code>), <code>2</code>(<code>short int</code>), <code>4</code>(<code>int</code>) or <code>8</code>(<code>long long</code>) bytes. <a href="https://en.cppreference.com/w/cpp/language/types">For a more detailed coverage read this</a>.</p>
-<p>NOTE1: But the only guarantee the C++ imposes is: <code>1 == sizeof(char) &lt;= sizeof(short) &lt;= sizeof(int) &lt;= sizeof(long) &lt;= sizeof(long long)</code> and it can result in compiler defined behaviours where a <code>char</code> can have 8 bytes and a <code>long long</code> can be 1 byte.</p>
-<p>NOTE2: If you care about being cross-platform conformant, you have to always specify the sign modifier or use a more descriptive type such as listed <a href="https://en.cppreference.com/w/cpp/header/cstdint">here</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>But the only guarantee the C++ imposes is: <code>1 == sizeof(char) &lt;= sizeof(short) &lt;= sizeof(int) &lt;= sizeof(long) &lt;= sizeof(long long)</code> and it can result in compiler defined behaviours where a <code>char</code> can have 8 bytes and a <code>long long</code> can be 1 byte.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you care about being cross-platform conformant, you have to always specify the sign modifier or use a more descriptive type such as listed <a href="https://en.cppreference.com/w/cpp/header/cstdint">here</a>.</p>
+</div>
 <p>For floating pointing numbers, the container size can be <code>4</code>(<code>float</code>), <code>8</code>(<code>double</code>), <code>10</code>(deprecated) or <code>16</code>(<code>long double</code>) bytes.</p>
 <p>The sign modifiers can be <code>signed</code> and <code>unsigned</code> and are applicable only for integer types. </p>
 <p>The default behavior of the types in a x86 cpu are as signed numbers and the first bit of the container is the signal. If the first bit is <code>0</code>, it means it is positive.  If the first bit is <code>1</code>, it means it is negative. <a href="https://en.wikipedia.org/wiki/Two%27s_complement">More details</a>.</p>
-<p>Which means that if the container is the size of 1 byte(8 bits), it have 1 bit for the signal and 7 bit for the content. So this number goes from <code>-128</code> up to <code>127</code>, this container is typically a <code>char</code>. The positive size has 1 less quantity in absolute than the negative because 0 is represented in positive side. There are <code>256</code> numbers between <code>-128</code> and <code>127</code> inclusive.     </p>
+<p>Which means that if the container follow two complement and is the size of 1 byte(8 bits), it have 1 bit for the signal and 7 bit for the content. So this number goes from <code>-128</code> up to <code>127</code>, this container is typically a <code>signed char</code>. The positive size has 1 less quantity in absolute than the negative because 0 is represented in positive side. There are <code>256</code> numbers between <code>-128</code> and <code>127</code> inclusive.</p>
 <h4 id="char">Char<a class="headerlink" href="#char" title="Permanent link">&para;</a></h4>
-<p>A standard <code>char</code> type uses 1 byte to store data.</p>
-<p>It can represent <code>2^8</code> or <code>256</code> different numbers. By default, in x86 machine char is signed and the represented numbers can go from <code>-2^7</code> or <code>-128</code> up to <code>2^7 - 1</code> or <code>127</code>.</p>
+<p>A standard <code>char</code> type uses 1 byte to store data and follows complement of 1. Going <code>-127</code> to <code>127</code>, so tipically represents <code>255</code> numbers.</p>
+<p>A <code>signed char</code> follows complement of 2 and it can represent <code>2^8</code> or <code>256</code> different numbers. By default, in x86 machine char is signed and the represented numbers can go from <code>-2^7</code> or <code>-128</code> up to <code>2^7 - 1</code> or <code>127</code>.</p>
+<p>An <code>unsigned char</code></p>
 <p>Chars can be used to represent letters following the <a href="https://www.asciitable.com/">ascii table</a> where each value means a specific letter, digit or symbol.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
