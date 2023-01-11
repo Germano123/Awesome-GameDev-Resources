@@ -117,17 +117,82 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 01-hello
+# Target rules for targets named 02-hello
 
 # Build rule for target.
-01-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 01-hello
-.PHONY : 01-hello
+02-hello: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 02-hello
+.PHONY : 02-hello
 
 # fast build rule for target.
-01-hello/fast:
-	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/build
-.PHONY : 01-hello/fast
+02-hello/fast:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/build
+.PHONY : 02-hello/fast
+
+#=============================================================================
+# Target rules for targets named 02-extremelyBasic
+
+# Build rule for target.
+02-extremelyBasic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 02-extremelyBasic
+.PHONY : 02-extremelyBasic
+
+# fast build rule for target.
+02-extremelyBasic/fast:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build
+.PHONY : 02-extremelyBasic/fast
+
+#=============================================================================
+# Target rules for targets named 03-bankNotesAndCoins
+
+# Build rule for target.
+03-bankNotesAndCoins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 03-bankNotesAndCoins
+.PHONY : 03-bankNotesAndCoins
+
+# fast build rule for target.
+03-bankNotesAndCoins/fast:
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build
+.PHONY : 03-bankNotesAndCoins/fast
+
+#=============================================================================
+# Target rules for targets named 03-volume
+
+# Build rule for target.
+03-volume: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 03-volume
+.PHONY : 03-volume
+
+# fast build rule for target.
+03-volume/fast:
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/build
+.PHONY : 03-volume/fast
+
+#=============================================================================
+# Target rules for targets named 03-distance
+
+# Build rule for target.
+03-distance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 03-distance
+.PHONY : 03-distance
+
+# fast build rule for target.
+03-distance/fast:
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/build
+.PHONY : 03-distance/fast
+
+#=============================================================================
+# Target rules for targets named 04-coordinates
+
+# Build rule for target.
+04-coordinates: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 04-coordinates
+.PHONY : 04-coordinates
+
+# fast build rule for target.
+04-coordinates/fast:
+	$(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/build
+.PHONY : 04-coordinates/fast
 
 #=============================================================================
 # Target rules for targets named GenerateDocs
@@ -277,7 +342,12 @@ help:
 	@echo "... fix-cmake-format"
 	@echo "... fix-format"
 	@echo "... format"
-	@echo "... 01-hello"
+	@echo "... 02-extremelyBasic"
+	@echo "... 02-hello"
+	@echo "... 03-bankNotesAndCoins"
+	@echo "... 03-distance"
+	@echo "... 03-volume"
+	@echo "... 04-coordinates"
 .PHONY : help
 
 

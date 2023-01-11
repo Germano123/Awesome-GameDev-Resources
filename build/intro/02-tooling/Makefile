@@ -117,25 +117,63 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-intro/02-tooling/CMakeFiles/01-hello.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/01-hello.dir/rule
-.PHONY : intro/02-tooling/CMakeFiles/01-hello.dir/rule
+intro/02-tooling/CMakeFiles/02-hello.dir/rule:
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-hello.dir/rule
+.PHONY : intro/02-tooling/CMakeFiles/02-hello.dir/rule
 
 # Convenience name for target.
-01-hello: intro/02-tooling/CMakeFiles/01-hello.dir/rule
-.PHONY : 01-hello
+02-hello: intro/02-tooling/CMakeFiles/02-hello.dir/rule
+.PHONY : 02-hello
 
 # fast build rule for target.
-01-hello/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/build
-.PHONY : 01-hello/fast
+02-hello/fast:
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/build
+.PHONY : 02-hello/fast
+
+# Convenience name for target.
+intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule:
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule
+.PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule
+
+# Convenience name for target.
+02-extremelyBasic: intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule
+.PHONY : 02-extremelyBasic
+
+# fast build rule for target.
+02-extremelyBasic/fast:
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build
+.PHONY : 02-extremelyBasic/fast
+
+extremelyBasic.o: extremelyBasic.cpp.o
+.PHONY : extremelyBasic.o
+
+# target to build an object file
+extremelyBasic.cpp.o:
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.o
+.PHONY : extremelyBasic.cpp.o
+
+extremelyBasic.i: extremelyBasic.cpp.i
+.PHONY : extremelyBasic.i
+
+# target to preprocess a source file
+extremelyBasic.cpp.i:
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.i
+.PHONY : extremelyBasic.cpp.i
+
+extremelyBasic.s: extremelyBasic.cpp.s
+.PHONY : extremelyBasic.s
+
+# target to generate assembly for a file
+extremelyBasic.cpp.s:
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.s
+.PHONY : extremelyBasic.cpp.s
 
 hello.o: hello.cpp.o
 .PHONY : hello.o
 
 # target to build an object file
 hello.cpp.o:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/hello.cpp.o
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o
 .PHONY : hello.cpp.o
 
 hello.i: hello.cpp.i
@@ -143,7 +181,7 @@ hello.i: hello.cpp.i
 
 # target to preprocess a source file
 hello.cpp.i:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/hello.cpp.i
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.i
 .PHONY : hello.cpp.i
 
 hello.s: hello.cpp.s
@@ -151,7 +189,7 @@ hello.s: hello.cpp.s
 
 # target to generate assembly for a file
 hello.cpp.s:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/hello.cpp.s
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.s
 .PHONY : hello.cpp.s
 
 # Help Target
@@ -162,7 +200,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... 01-hello"
+	@echo "... 02-extremelyBasic"
+	@echo "... 02-hello"
+	@echo "... extremelyBasic.o"
+	@echo "... extremelyBasic.i"
+	@echo "... extremelyBasic.s"
 	@echo "... hello.o"
 	@echo "... hello.i"
 	@echo "... hello.s"

@@ -1,0 +1,1 @@
+/emsdk/upstream/emscripten/em++  -Oz -s WASM=2 @CMakeFiles/04-coordinates.dir/objects1.rsp -o ../../out/04-coordinates.js 

@@ -1,0 +1,1 @@
+/emsdk/upstream/emscripten/em++  -Oz -s WASM=2 @CMakeFiles/02-extremelyBasic.dir/objects1.rsp -o ../../out/02-extremelyBasic.js 

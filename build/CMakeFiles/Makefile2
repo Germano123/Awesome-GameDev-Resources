@@ -121,21 +121,28 @@ documentation/clean: documentation/CMakeFiles/GenerateDocs.dir/clean
 
 # Recursive "all" directory target.
 intro/all: intro/02-tooling/all
+intro/all: intro/03-datatypes/all
+intro/all: intro/04-conditionals/all
 .PHONY : intro/all
 
 # Recursive "preinstall" directory target.
 intro/preinstall: intro/02-tooling/preinstall
+intro/preinstall: intro/03-datatypes/preinstall
+intro/preinstall: intro/04-conditionals/preinstall
 .PHONY : intro/preinstall
 
 # Recursive "clean" directory target.
 intro/clean: intro/02-tooling/clean
+intro/clean: intro/03-datatypes/clean
+intro/clean: intro/04-conditionals/clean
 .PHONY : intro/clean
 
 #=============================================================================
 # Directory level rules for directory intro/02-tooling
 
 # Recursive "all" directory target.
-intro/02-tooling/all: intro/02-tooling/CMakeFiles/01-hello.dir/all
+intro/02-tooling/all: intro/02-tooling/CMakeFiles/02-hello.dir/all
+intro/02-tooling/all: intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/all
 .PHONY : intro/02-tooling/all
 
 # Recursive "preinstall" directory target.
@@ -143,34 +150,199 @@ intro/02-tooling/preinstall:
 .PHONY : intro/02-tooling/preinstall
 
 # Recursive "clean" directory target.
-intro/02-tooling/clean: intro/02-tooling/CMakeFiles/01-hello.dir/clean
+intro/02-tooling/clean: intro/02-tooling/CMakeFiles/02-hello.dir/clean
+intro/02-tooling/clean: intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/clean
 .PHONY : intro/02-tooling/clean
 
 #=============================================================================
-# Target rules for target intro/02-tooling/CMakeFiles/01-hello.dir
+# Directory level rules for directory intro/03-datatypes
+
+# Recursive "all" directory target.
+intro/03-datatypes/all: intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/all
+intro/03-datatypes/all: intro/03-datatypes/CMakeFiles/03-volume.dir/all
+intro/03-datatypes/all: intro/03-datatypes/CMakeFiles/03-distance.dir/all
+.PHONY : intro/03-datatypes/all
+
+# Recursive "preinstall" directory target.
+intro/03-datatypes/preinstall:
+.PHONY : intro/03-datatypes/preinstall
+
+# Recursive "clean" directory target.
+intro/03-datatypes/clean: intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/clean
+intro/03-datatypes/clean: intro/03-datatypes/CMakeFiles/03-volume.dir/clean
+intro/03-datatypes/clean: intro/03-datatypes/CMakeFiles/03-distance.dir/clean
+.PHONY : intro/03-datatypes/clean
+
+#=============================================================================
+# Directory level rules for directory intro/04-conditionals
+
+# Recursive "all" directory target.
+intro/04-conditionals/all: intro/04-conditionals/CMakeFiles/04-coordinates.dir/all
+.PHONY : intro/04-conditionals/all
+
+# Recursive "preinstall" directory target.
+intro/04-conditionals/preinstall:
+.PHONY : intro/04-conditionals/preinstall
+
+# Recursive "clean" directory target.
+intro/04-conditionals/clean: intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean
+.PHONY : intro/04-conditionals/clean
+
+#=============================================================================
+# Target rules for target intro/02-tooling/CMakeFiles/02-hello.dir
 
 # All Build rule for target.
-intro/02-tooling/CMakeFiles/01-hello.dir/all:
-	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/depend
-	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=1,2 "Built target 01-hello"
-.PHONY : intro/02-tooling/CMakeFiles/01-hello.dir/all
+intro/02-tooling/CMakeFiles/02-hello.dir/all:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/depend
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=3,4 "Built target 02-hello"
+.PHONY : intro/02-tooling/CMakeFiles/02-hello.dir/all
 
 # Build rule for subdir invocation for target.
-intro/02-tooling/CMakeFiles/01-hello.dir/rule: cmake_check_build_system
+intro/02-tooling/CMakeFiles/02-hello.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/01-hello.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-hello.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
-.PHONY : intro/02-tooling/CMakeFiles/01-hello.dir/rule
+.PHONY : intro/02-tooling/CMakeFiles/02-hello.dir/rule
 
 # Convenience name for target.
-01-hello: intro/02-tooling/CMakeFiles/01-hello.dir/rule
-.PHONY : 01-hello
+02-hello: intro/02-tooling/CMakeFiles/02-hello.dir/rule
+.PHONY : 02-hello
 
 # clean rule for target.
-intro/02-tooling/CMakeFiles/01-hello.dir/clean:
-	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/01-hello.dir/build.make intro/02-tooling/CMakeFiles/01-hello.dir/clean
-.PHONY : intro/02-tooling/CMakeFiles/01-hello.dir/clean
+intro/02-tooling/CMakeFiles/02-hello.dir/clean:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/clean
+.PHONY : intro/02-tooling/CMakeFiles/02-hello.dir/clean
+
+#=============================================================================
+# Target rules for target intro/02-tooling/CMakeFiles/02-extremelyBasic.dir
+
+# All Build rule for target.
+intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/all:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/depend
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=1,2 "Built target 02-extremelyBasic"
+.PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/all
+
+# Build rule for subdir invocation for target.
+intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+.PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule
+
+# Convenience name for target.
+02-extremelyBasic: intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule
+.PHONY : 02-extremelyBasic
+
+# clean rule for target.
+intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/clean
+.PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/clean
+
+#=============================================================================
+# Target rules for target intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir
+
+# All Build rule for target.
+intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/all:
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/depend
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=5,6 "Built target 03-bankNotesAndCoins"
+.PHONY : intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/all
+
+# Build rule for subdir invocation for target.
+intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+.PHONY : intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/rule
+
+# Convenience name for target.
+03-bankNotesAndCoins: intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/rule
+.PHONY : 03-bankNotesAndCoins
+
+# clean rule for target.
+intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/clean:
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/clean
+.PHONY : intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/clean
+
+#=============================================================================
+# Target rules for target intro/03-datatypes/CMakeFiles/03-volume.dir
+
+# All Build rule for target.
+intro/03-datatypes/CMakeFiles/03-volume.dir/all:
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/depend
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=9,10 "Built target 03-volume"
+.PHONY : intro/03-datatypes/CMakeFiles/03-volume.dir/all
+
+# Build rule for subdir invocation for target.
+intro/03-datatypes/CMakeFiles/03-volume.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-volume.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+.PHONY : intro/03-datatypes/CMakeFiles/03-volume.dir/rule
+
+# Convenience name for target.
+03-volume: intro/03-datatypes/CMakeFiles/03-volume.dir/rule
+.PHONY : 03-volume
+
+# clean rule for target.
+intro/03-datatypes/CMakeFiles/03-volume.dir/clean:
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/clean
+.PHONY : intro/03-datatypes/CMakeFiles/03-volume.dir/clean
+
+#=============================================================================
+# Target rules for target intro/03-datatypes/CMakeFiles/03-distance.dir
+
+# All Build rule for target.
+intro/03-datatypes/CMakeFiles/03-distance.dir/all:
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/depend
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=7,8 "Built target 03-distance"
+.PHONY : intro/03-datatypes/CMakeFiles/03-distance.dir/all
+
+# Build rule for subdir invocation for target.
+intro/03-datatypes/CMakeFiles/03-distance.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-distance.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+.PHONY : intro/03-datatypes/CMakeFiles/03-distance.dir/rule
+
+# Convenience name for target.
+03-distance: intro/03-datatypes/CMakeFiles/03-distance.dir/rule
+.PHONY : 03-distance
+
+# clean rule for target.
+intro/03-datatypes/CMakeFiles/03-distance.dir/clean:
+	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/clean
+.PHONY : intro/03-datatypes/CMakeFiles/03-distance.dir/clean
+
+#=============================================================================
+# Target rules for target intro/04-conditionals/CMakeFiles/04-coordinates.dir
+
+# All Build rule for target.
+intro/04-conditionals/CMakeFiles/04-coordinates.dir/all:
+	$(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/depend
+	$(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=11,12 "Built target 04-coordinates"
+.PHONY : intro/04-conditionals/CMakeFiles/04-coordinates.dir/all
+
+# Build rule for subdir invocation for target.
+intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/CMakeFiles/04-coordinates.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+.PHONY : intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule
+
+# Convenience name for target.
+04-coordinates: intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule
+.PHONY : 04-coordinates
+
+# clean rule for target.
+intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean:
+	$(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean
+.PHONY : intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean
 
 #=============================================================================
 # Target rules for target documentation/CMakeFiles/GenerateDocs.dir
@@ -358,8 +530,8 @@ _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/clean:
 # Target rules for target _deps/format.cmake-build/CMakeFiles/format.dir
 
 # All Build rule for target.
-_deps/format.cmake-build/CMakeFiles/format.dir/all: _deps/format.cmake-build/CMakeFiles/cmake-format.dir/all
 _deps/format.cmake-build/CMakeFiles/format.dir/all: _deps/format.cmake-build/CMakeFiles/clang-format.dir/all
+_deps/format.cmake-build/CMakeFiles/format.dir/all: _deps/format.cmake-build/CMakeFiles/cmake-format.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/format.dir/build.make _deps/format.cmake-build/CMakeFiles/format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/format.dir/build.make _deps/format.cmake-build/CMakeFiles/format.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target format"

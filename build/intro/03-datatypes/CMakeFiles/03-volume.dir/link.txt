@@ -1,0 +1,1 @@
+/emsdk/upstream/emscripten/em++  -Oz -s WASM=2 @CMakeFiles/03-volume.dir/objects1.rsp -o ../../out/03-volume.js 
