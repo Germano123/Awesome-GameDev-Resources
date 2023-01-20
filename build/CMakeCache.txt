@@ -289,8 +289,22 @@ FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
 //Enables QUIET option for all content population
 FETCHCONTENT_QUIET:BOOL=ON
 
+//When not empty, overrides where to find pre-populated content
+// for Format.cmake
+FETCHCONTENT_SOURCE_DIR_FORMAT.CMAKE:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for m.css
+FETCHCONTENT_SOURCE_DIR_M.CSS:PATH=
+
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of Format.cmake
+FETCHCONTENT_UPDATES_DISCONNECTED_FORMAT.CMAKE:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of m.css
+FETCHCONTENT_UPDATES_DISCONNECTED_M.CSS:BOOL=OFF
 
 //Skip CMake formatting.
 FORMAT_SKIP_CMAKE:BOOL=OFF

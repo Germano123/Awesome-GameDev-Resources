@@ -2,207 +2,207 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://courses.tolstenko.net/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/algorithms/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/artificialintelligence/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/artificialintelligence/00-introduction/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/artificialintelligence/01-pcg/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/artificialintelligence/02-sm/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/artificialintelligence/03-boardgames/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/artificialintelligence/04-spacequantization/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/artificialintelligence/animation/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/cpm_modules/format.cmake/17e103764947115e78d95ecc29c4bee54dc64e08/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/cpm_modules/m.css/e895ba4b660ee764c6511109cdda941c90ea7c32/documentation/test_doxygen/page_empty_page/input/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/cpm_modules/m.css/e895ba4b660ee764c6511109cdda941c90ea7c32/documentation/test_doxygen/page_empty_page/subdir/otherinput/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/datastructures/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/01-introduction/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/02-tooling/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/03-datatypes/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/04-conditionals/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/05-loops/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/06-functions/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/07-streams/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/08-arrays/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/09-recursion/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/intro/10-sorting/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/01-introduction/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/02-cases/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/02-cases/example.com/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/03-structure/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/04-communication/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/05-style/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/06-strategy/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/07-frontend/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/08-cms/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/09-get-ready/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/09-get-ready/common-intenterview-questions/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/10-hosting/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/11-dynamic/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/12-promoting/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/13-cover-letter/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://courses.tolstenko.net/portfolio/14-cv/</loc>
-         <lastmod>2023-01-19</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
