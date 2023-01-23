@@ -144,6 +144,20 @@ intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule:
 	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build
 .PHONY : 02-extremelyBasic/fast
 
+# Convenience name for target.
+intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule:
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule
+.PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule
+
+# Convenience name for target.
+02-extremelyBasic-Test: intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule
+.PHONY : 02-extremelyBasic-Test
+
+# fast build rule for target.
+02-extremelyBasic-Test/fast:
+	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build
+.PHONY : 02-extremelyBasic-Test/fast
+
 extremelyBasic.o: extremelyBasic.cpp.o
 .PHONY : extremelyBasic.o
 
@@ -200,6 +214,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... 02-extremelyBasic-Test"
 	@echo "... 02-extremelyBasic"
 	@echo "... 02-hello"
 	@echo "... extremelyBasic.o"

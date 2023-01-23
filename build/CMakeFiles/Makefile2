@@ -152,6 +152,7 @@ intro/02-tooling/preinstall:
 # Recursive "clean" directory target.
 intro/02-tooling/clean: intro/02-tooling/CMakeFiles/02-hello.dir/clean
 intro/02-tooling/clean: intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/clean
+intro/02-tooling/clean: intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/clean
 .PHONY : intro/02-tooling/clean
 
 #=============================================================================
@@ -239,6 +240,32 @@ intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule: cmake_check_build_system
 intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/clean:
 	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/clean
 .PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/clean
+
+#=============================================================================
+# Target rules for target intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir
+
+# All Build rule for target.
+intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/all: intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/all
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/depend
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target 02-extremelyBasic-Test"
+.PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/all
+
+# Build rule for subdir invocation for target.
+intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+.PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule
+
+# Convenience name for target.
+02-extremelyBasic-Test: intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule
+.PHONY : 02-extremelyBasic-Test
+
+# clean rule for target.
+intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/clean
+.PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/clean
 
 #=============================================================================
 # Target rules for target intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir

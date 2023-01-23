@@ -4,6 +4,7 @@
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/CMakeFiles/rebuild_cache.dir
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/CMakeFiles/02-hello.dir
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/CMakeFiles/02-extremelyBasic.dir
+/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/CMakeFiles/edit_cache.dir
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/CMakeFiles/rebuild_cache.dir
 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir

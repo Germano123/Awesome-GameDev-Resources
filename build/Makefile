@@ -143,6 +143,19 @@ depend:
 .PHONY : 02-extremelyBasic/fast
 
 #=============================================================================
+# Target rules for targets named 02-extremelyBasic-Test
+
+# Build rule for target.
+02-extremelyBasic-Test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 02-extremelyBasic-Test
+.PHONY : 02-extremelyBasic-Test
+
+# fast build rule for target.
+02-extremelyBasic-Test/fast:
+	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build
+.PHONY : 02-extremelyBasic-Test/fast
+
+#=============================================================================
 # Target rules for targets named 03-bankNotesAndCoins
 
 # Build rule for target.
@@ -332,6 +345,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... 02-extremelyBasic-Test"
 	@echo "... GenerateDocs"
 	@echo "... check-clang-format"
 	@echo "... check-cmake-format"
