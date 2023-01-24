@@ -1,3 +1,0 @@
-repository='https://github.com/mosra/m.css.git'
-module=''
-tag='origin'
