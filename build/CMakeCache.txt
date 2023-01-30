@@ -432,7 +432,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 CPM_DIRECTORY:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/cpm
 //Don't download or configure dependencies (for testing)
 CPM_DRY_RUN:INTERNAL=OFF
-CPM_FILE:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/cpm/CPM_v0.36.0.cmake
+CPM_FILE:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/cpm/CPM_v0.37.0.cmake
 CPM_INDENT:INTERNAL=CPM:
 CPM_MODULE_PATH:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CPM_modules
 CPM_PACKAGES:INTERNAL=m.css;Format.cmake
@@ -443,7 +443,7 @@ CPM_PACKAGE_LOCK_FILE:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/In
 CPM_PACKAGE_m.css_BINARY_DIR:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/m.css-build
 CPM_PACKAGE_m.css_SOURCE_DIR:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/m.css/e895ba4b660ee764c6511109cdda941c90ea7c32
 CPM_PACKAGE_m.css_VERSION:INTERNAL=0
-CPM_VERSION:INTERNAL=0.36.0
+CPM_VERSION:INTERNAL=0.37.0
 //ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
 DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
