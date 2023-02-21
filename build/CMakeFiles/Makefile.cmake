@@ -12,7 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "../cmake/get_cpm.cmake"
   "../cmake/tools.cmake"
-  "../cpm_modules/cpm/CPM_v0.37.0.cmake"
+  "../cpm_modules/cpm/CPM_v0.38.0.cmake"
   "../cpm_modules/format.cmake/17e103764947115e78d95ecc29c4bee54dc64e08/CMakeLists.txt"
   "../documentation/CMakeLists.txt"
   "../documentation/Doxyfile"

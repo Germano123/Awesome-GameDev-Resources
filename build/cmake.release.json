@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/90522859",
-  "assets_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/90522859/assets",
-  "upload_url": "https://uploads.github.com/repos/cpm-cmake/CPM.cmake/releases/90522859/assets{?name,label}",
-  "html_url": "https://github.com/cpm-cmake/CPM.cmake/releases/tag/v0.37.0",
-  "id": 90522859,
+  "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/93180582",
+  "assets_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/93180582/assets",
+  "upload_url": "https://uploads.github.com/repos/cpm-cmake/CPM.cmake/releases/93180582/assets{?name,label}",
+  "html_url": "https://github.com/cpm-cmake/CPM.cmake/releases/tag/v0.38.0",
+  "id": 93180582,
   "author": {
     "login": "TheLartians",
     "id": 4437447,
@@ -24,19 +24,19 @@
     "type": "User",
     "site_admin": false
   },
-  "node_id": "RE_kwDOCsBGV84FZUTr",
-  "tag_name": "v0.37.0",
+  "node_id": "RE_kwDOCsBGV84FjdKm",
+  "tag_name": "v0.38.0",
   "target_commitish": "master",
-  "name": "v0.37.0 - Support parallel configurations using source cache ",
+  "name": "v0.38.0 - Add SYSTEM option",
   "draft": false,
   "prerelease": false,
-  "created_at": "2023-01-28T13:36:44Z",
-  "published_at": "2023-01-28T13:38:49Z",
+  "created_at": "2023-02-21T14:51:33Z",
+  "published_at": "2023-02-21T15:51:58Z",
   "assets": [
     {
-      "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/assets/93375770",
-      "id": 93375770,
-      "node_id": "RA_kwDOCsBGV84FkM0a",
+      "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/assets/96541995",
+      "id": 96541995,
+      "node_id": "RA_kwDOCsBGV84FwR0r",
       "name": "CPM.cmake",
       "label": "",
       "uploader": {
@@ -61,16 +61,16 @@
       },
       "content_type": "binary/octet-stream",
       "state": "uploaded",
-      "size": 35623,
-      "download_count": 4045,
-      "created_at": "2023-01-28T13:39:02Z",
-      "updated_at": "2023-01-28T13:39:02Z",
-      "browser_download_url": "https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.37.0/CPM.cmake"
+      "size": 36179,
+      "download_count": 102,
+      "created_at": "2023-02-21T15:52:12Z",
+      "updated_at": "2023-02-21T15:52:12Z",
+      "browser_download_url": "https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.0/CPM.cmake"
     },
     {
-      "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/assets/93375773",
-      "id": 93375773,
-      "node_id": "RA_kwDOCsBGV84FkM0d",
+      "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/assets/96541997",
+      "id": 96541997,
+      "node_id": "RA_kwDOCsBGV84FwR0t",
       "name": "get_cpm.cmake",
       "label": "",
       "uploader": {
@@ -96,26 +96,26 @@
       "content_type": "binary/octet-stream",
       "state": "uploaded",
       "size": 1060,
-      "download_count": 645,
-      "created_at": "2023-01-28T13:39:02Z",
-      "updated_at": "2023-01-28T13:39:02Z",
-      "browser_download_url": "https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.37.0/get_cpm.cmake"
+      "download_count": 14,
+      "created_at": "2023-02-21T15:52:13Z",
+      "updated_at": "2023-02-21T15:52:13Z",
+      "browser_download_url": "https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.0/get_cpm.cmake"
     }
   ],
-  "tarball_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/tarball/v0.37.0",
-  "zipball_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/zipball/v0.37.0",
-  "body": "## What's Changed\r\n* Instead of spdlog's bundled fmt re-use it from CPM.cmake by @jhasse in https://github.com/cpm-cmake/CPM.cmake/pull/364\r\n* Small helper function for logging : by @flagarde in https://github.com/cpm-cmake/CPM.cmake/pull/422\r\n* get_cpm: Recover from failed download by @haenkel in https://github.com/cpm-cmake/CPM.cmake/pull/426\r\n* Update example dependency versions by @TheLartians in https://github.com/cpm-cmake/CPM.cmake/pull/430\r\n* Add JNGL to \"Built with CPM.cmake\" by @jhasse in https://github.com/cpm-cmake/CPM.cmake/pull/434\r\n* Add file locking to support parallel runs. by @PercentBoat4164 in https://github.com/cpm-cmake/CPM.cmake/pull/427\r\n\r\n## New Contributors\r\n* @jhasse made their first contribution in https://github.com/cpm-cmake/CPM.cmake/pull/364\r\n* @haenkel made their first contribution in https://github.com/cpm-cmake/CPM.cmake/pull/426\r\n* @PercentBoat4164 made their first contribution in https://github.com/cpm-cmake/CPM.cmake/pull/427\r\n\r\n**Full Changelog**: https://github.com/cpm-cmake/CPM.cmake/compare/v0.36.0...v0.37.0",
+  "tarball_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/tarball/v0.38.0",
+  "zipball_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/zipball/v0.38.0",
+  "body": "## What's Changed\r\n* Improve Multi-threaded Performance. by @PercentBoat4164 in https://github.com/cpm-cmake/CPM.cmake/pull/450\r\n* Add SYSTEM option by @TheLartians in https://github.com/cpm-cmake/CPM.cmake/pull/449\r\n\r\n\r\n**Full Changelog**: https://github.com/cpm-cmake/CPM.cmake/compare/v0.37.0...v0.38.0",
   "reactions": {
-    "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/90522859/reactions",
-    "total_count": 4,
-    "+1": 1,
+    "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/93180582/reactions",
+    "total_count": 1,
+    "+1": 0,
     "-1": 0,
     "laugh": 0,
-    "hooray": 0,
+    "hooray": 1,
     "confused": 0,
-    "heart": 3,
+    "heart": 0,
     "rocket": 0,
     "eyes": 0
   },
-  "mentions_count": 5
+  "mentions_count": 2
 }
