@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/93180582",
-  "assets_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/93180582/assets",
-  "upload_url": "https://uploads.github.com/repos/cpm-cmake/CPM.cmake/releases/93180582/assets{?name,label}",
-  "html_url": "https://github.com/cpm-cmake/CPM.cmake/releases/tag/v0.38.0",
-  "id": 93180582,
+  "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/94549554",
+  "assets_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/94549554/assets",
+  "upload_url": "https://uploads.github.com/repos/cpm-cmake/CPM.cmake/releases/94549554/assets{?name,label}",
+  "html_url": "https://github.com/cpm-cmake/CPM.cmake/releases/tag/v0.38.1",
+  "id": 94549554,
   "author": {
     "login": "TheLartians",
     "id": 4437447,
@@ -24,19 +24,19 @@
     "type": "User",
     "site_admin": false
   },
-  "node_id": "RE_kwDOCsBGV84FjdKm",
-  "tag_name": "v0.38.0",
+  "node_id": "RE_kwDOCsBGV84ForYy",
+  "tag_name": "v0.38.1",
   "target_commitish": "master",
-  "name": "v0.38.0 - Add SYSTEM option",
+  "name": "v0.38.1",
   "draft": false,
   "prerelease": false,
-  "created_at": "2023-02-21T14:51:33Z",
-  "published_at": "2023-02-21T15:51:58Z",
+  "created_at": "2023-02-28T18:25:01Z",
+  "published_at": "2023-03-05T12:11:05Z",
   "assets": [
     {
-      "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/assets/96541995",
-      "id": 96541995,
-      "node_id": "RA_kwDOCsBGV84FwR0r",
+      "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/assets/98123360",
+      "id": 98123360,
+      "node_id": "RA_kwDOCsBGV84F2T5g",
       "name": "CPM.cmake",
       "label": "",
       "uploader": {
@@ -61,16 +61,16 @@
       },
       "content_type": "binary/octet-stream",
       "state": "uploaded",
-      "size": 36179,
-      "download_count": 2486,
-      "created_at": "2023-02-21T15:52:12Z",
-      "updated_at": "2023-02-21T15:52:12Z",
-      "browser_download_url": "https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.0/CPM.cmake"
+      "size": 36240,
+      "download_count": 1034,
+      "created_at": "2023-03-05T12:11:20Z",
+      "updated_at": "2023-03-05T12:11:20Z",
+      "browser_download_url": "https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.1/CPM.cmake"
     },
     {
-      "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/assets/96541997",
-      "id": 96541997,
-      "node_id": "RA_kwDOCsBGV84FwR0t",
+      "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/assets/98123361",
+      "id": 98123361,
+      "node_id": "RA_kwDOCsBGV84F2T5h",
       "name": "get_cpm.cmake",
       "label": "",
       "uploader": {
@@ -95,27 +95,27 @@
       },
       "content_type": "binary/octet-stream",
       "state": "uploaded",
-      "size": 1060,
-      "download_count": 622,
-      "created_at": "2023-02-21T15:52:13Z",
-      "updated_at": "2023-02-21T15:52:13Z",
-      "browser_download_url": "https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.0/get_cpm.cmake"
+      "size": 1075,
+      "download_count": 253,
+      "created_at": "2023-03-05T12:11:21Z",
+      "updated_at": "2023-03-05T12:11:21Z",
+      "browser_download_url": "https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.1/get_cpm.cmake"
     }
   ],
-  "tarball_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/tarball/v0.38.0",
-  "zipball_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/zipball/v0.38.0",
-  "body": "## What's Changed\r\n* Improve Multi-threaded Performance. by @PercentBoat4164 in https://github.com/cpm-cmake/CPM.cmake/pull/450\r\n* Add SYSTEM option by @TheLartians in https://github.com/cpm-cmake/CPM.cmake/pull/449\r\n\r\n\r\n**Full Changelog**: https://github.com/cpm-cmake/CPM.cmake/compare/v0.37.0...v0.38.0",
+  "tarball_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/tarball/v0.38.1",
+  "zipball_url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/zipball/v0.38.1",
+  "body": "## What's Changed\r\n* Move section on adding CPM higher in the Readme by @TheLartians in https://github.com/cpm-cmake/CPM.cmake/pull/454\r\n* Update Readme to match default SYSTEM behaviour by @TheLartians in https://github.com/cpm-cmake/CPM.cmake/pull/452\r\n* Add CMake version as workflow matrix parameter by @TheLartians in https://github.com/cpm-cmake/CPM.cmake/pull/451\r\n* Prevent `check` variable leaking into caller scope by @CraigHutchinson in https://github.com/cpm-cmake/CPM.cmake/pull/457\r\n* SOURCE_DIR option disable call to find_package() by @ClausKlein in https://github.com/cpm-cmake/CPM.cmake/pull/456\r\n\r\n\r\n**Full Changelog**: https://github.com/cpm-cmake/CPM.cmake/compare/v0.38.0...v0.38.1",
   "reactions": {
-    "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/93180582/reactions",
-    "total_count": 2,
+    "url": "https://api.github.com/repos/cpm-cmake/CPM.cmake/releases/94549554/reactions",
+    "total_count": 3,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
-    "hooray": 1,
+    "hooray": 0,
     "confused": 0,
-    "heart": 0,
-    "rocket": 1,
+    "heart": 3,
+    "rocket": 0,
     "eyes": 0
   },
-  "mentions_count": 2
+  "mentions_count": 3
 }

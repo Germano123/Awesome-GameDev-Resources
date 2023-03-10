@@ -29,9 +29,6 @@ CLANG_FORMAT_PROGRAM:FILEPATH=CLANG_FORMAT_PROGRAM-NOTFOUND
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/emsdk/upstream/bin/llvm-addr2line
 
-//Emscripten ar
-CMAKE_AR:FILEPATH=/emsdk/upstream/emscripten/emar
-
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=
@@ -41,15 +38,6 @@ CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //No help, variable specified on the command line.
 CMAKE_CROSSCOMPILING_EMULATOR:UNINITIALIZED=/emsdk/node/14.18.2_64bit/bin/node;--experimental-wasm-bulk-memory;--experimental-wasm-threads
-
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=/emsdk/upstream/emscripten/em++
-
-//Emscripten ar
-CMAKE_CXX_COMPILER_AR:FILEPATH=/emsdk/upstream/emscripten/emar
-
-//Emscripten ranlib
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/emsdk/upstream/emscripten/emranlib
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -65,15 +53,6 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
-
-//Emscripten emcc
-CMAKE_C_COMPILER:FILEPATH=/emsdk/upstream/emscripten/emcc
-
-//Emscripten ar
-CMAKE_C_COMPILER_AR:FILEPATH=/emsdk/upstream/emscripten/emar
-
-//Emscripten ranlib
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/emsdk/upstream/emscripten/emranlib
 
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
@@ -129,9 +108,6 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/emsdk/upstream/bin/llvm-nm
-
-//Path to a program.
 CMAKE_OBJCOPY:FILEPATH=/emsdk/upstream/bin/llvm-objcopy
 
 //Path to a program.
@@ -160,9 +136,6 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
-
-//Emscripten ranlib
-CMAKE_RANLIB:FILEPATH=/emsdk/upstream/emscripten/emranlib
 
 //Path to a program.
 CMAKE_READELF:FILEPATH=/usr/bin/readelf
@@ -289,8 +262,22 @@ FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
 //Enables QUIET option for all content population
 FETCHCONTENT_QUIET:BOOL=ON
 
+//When not empty, overrides where to find pre-populated content
+// for Format.cmake
+FETCHCONTENT_SOURCE_DIR_FORMAT.CMAKE:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for m.css
+FETCHCONTENT_SOURCE_DIR_M.CSS:PATH=
+
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of Format.cmake
+FETCHCONTENT_UPDATES_DISCONNECTED_FORMAT.CMAKE:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of m.css
+FETCHCONTENT_UPDATES_DISCONNECTED_M.CSS:BOOL=OFF
 
 //Skip CMake formatting.
 FORMAT_SKIP_CMAKE:BOOL=OFF
@@ -308,8 +295,6 @@ GIT_PROGRAM:FILEPATH=/usr/bin/git
 
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_AR
-CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
 //Major version of cmake used to create the current loaded cache
@@ -326,12 +311,6 @@ CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 CMAKE_CPACK_COMMAND:INTERNAL=/usr/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
-//ADVANCED property for variable: CMAKE_CXX_COMPILER
-CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
-CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
-CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
@@ -383,8 +362,6 @@ CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_NM
-CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
 CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
@@ -393,8 +370,6 @@ CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RANLIB
-CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
@@ -432,7 +407,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 CPM_DIRECTORY:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/cpm
 //Don't download or configure dependencies (for testing)
 CPM_DRY_RUN:INTERNAL=OFF
-CPM_FILE:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/cpm/CPM_v0.38.0.cmake
+CPM_FILE:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/cpm/CPM_v0.38.1.cmake
 CPM_INDENT:INTERNAL=CPM:
 CPM_MODULE_PATH:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CPM_modules
 CPM_PACKAGES:INTERNAL=m.css;Format.cmake
@@ -443,7 +418,7 @@ CPM_PACKAGE_LOCK_FILE:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/In
 CPM_PACKAGE_m.css_BINARY_DIR:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/m.css-build
 CPM_PACKAGE_m.css_SOURCE_DIR:INTERNAL=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/m.css/e895ba4b660ee764c6511109cdda941c90ea7c32
 CPM_PACKAGE_m.css_VERSION:INTERNAL=0
-CPM_VERSION:INTERNAL=0.38.0
+CPM_VERSION:INTERNAL=0.38.1
 //ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
 DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE

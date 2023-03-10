@@ -1,3 +1,3 @@
-include("/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/cpm/CPM_v0.38.0.cmake")
+include("/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/cpm/CPM_v0.38.1.cmake")
 CPMAddPackage("GITHUB_REPOSITORY;TheLartians/Format.cmake;VERSION;1.7.3;EXCLUDE_FROM_ALL;YES;SYSTEM;YES;")
 set(Format.cmake_FOUND TRUE)
