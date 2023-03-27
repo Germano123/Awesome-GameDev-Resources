@@ -21,7 +21,7 @@
         <link rel="next" href="../09-recursion/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.4">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7bf56d0a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.240905d7.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -1053,15 +1053,106 @@
 
 
 <h1 id="arrays">Arrays<a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h1>
+<p>An array is a collection of similar data items, stored in contiguous memory locations. The items in an array can be of any built-in data type such as int, float, char, etc. An array is defined using a syntax similar to declaring a variable, but with square brackets indicating the size of the array.</p>
+<p>Here's an example of declaring an array of integers with a size of 5:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span><span class="w"> </span><span class="c1">// declare an array of size 5 at the stack</span>
+</code></pre></div>
+<p>The above declaration creates an array named arr of size 5, which means it can store 5 integers. The array elements are stored in contiguous memory locations, which means the next element is stored at the immediate next memory location. The first element of the array is stored at the 0<sup>th</sup> index, the second element at the 1<sup>st</sup> index, and so on up to 4. Between 0 an 4 all inclusive we have 5 elements.</p>
+<p>This creates an array called "myArray" that can hold 5 integers. The first element of the array is accessed using the index 0, and the last element is accessed using the index 4. You can initialize the array elements during declaration by providing a comma-separated list of values enclosed in braces:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">myArr</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">};</span><span class="w"> </span><span class="c1">// initialize the array with 5 elements</span>
+</code></pre></div>
+<p>In this case, the first element of the array will be 10, the second element will be 20, and so on.</p>
+<p>You can also use loops to iterate over the elements of an array and perform operations on them. For example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="n">myArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+</code></pre></div>
+<p>This loop multiplies each element of the "myArray" by 2.</p>
+<p>Arrays are a useful data structure in C++ because they allow you to store and manipulate collections of data in a structured way. However, they have some limitations, such as a fixed size that cannot be changed at runtime, and the potential for buffer overflow if you try to access elements beyond the end of the array.</p>
+<h1 id="buffer-overflow">Buffer overflow<a class="headerlink" href="#buffer-overflow" title="Permanent link">&para;</a></h1>
+<p>A buffer overflow occurs when a program attempts to write more data to a fixed-size buffer than it can hold. This can happen when a program attempts to write more data to a buffer than the buffer can hold, or when a program attempts to read more data from a buffer than the buffer contains. This can happen when a program attempts to write more data to a buffer than the buffer can hold, or when a program attempts to read more data from a buffer than the buffer contains.</p>
+<p>A buffer overflow can be caused by a number of different factors, including:</p>
+<ul>
+<li>A program that attempts to write more data to a buffer than the buffer can hold</li>
+<li>A program that attempts to read more data from a buffer than the buffer contains</li>
+</ul>
+<p>Buffer overflow vulnerabilities are a common type of security vulnerability, as they can be exploited by malicious attackers to execute arbitrary code or gain unauthorized access to a system. To prevent buffer overflow vulnerabilities, it's important to carefully manage memory allocation and use bounds checking functions or techniques such as using safe C++ library functions like <code>std::vector</code> or <code>std::array</code>, and ensuring that input data is properly validated and sanitized.</p>
+<h1 id="multi-dimensional-arrays">Multi-dimensional arrays<a class="headerlink" href="#multi-dimensional-arrays" title="Permanent link">&para;</a></h1>
+<p>A multi-dimensional array is an array of arrays. For example, a 2-dimensional array is an array of arrays, where each element of the array is itself an array. A 3-dimensional array is an array of 2-dimensional arrays, where each element of the array is itself a 2-dimensional array. And so on.</p>
+<p>For example, to declare a two-dimensional array with 3 rows and 4 columns of integers, you would use the following code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">4</span><span class="p">];</span><span class="w"> </span><span class="c1">// Declare a 2-dimensional array with 3 rows and 4 columns at the stack</span>
+</code></pre></div>
+<p>You can access elements in a multidimensional array using multiple sets of square brackets. For example, to access the element at row 2 and column 3 of myArray, you would use the following code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">element</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myArray</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">];</span><span class="w"> </span><span class="c1">// Access the element at row 2 and column 3</span>
+</code></pre></div>
+<p>In C++, you can have arrays with any number of dimensions, but keep in mind that as the number of dimensions increases, it becomes more difficult to manage and visualize the data.</p>
+<h1 id="array-dynamic-allocation">Array dynamic allocation<a class="headerlink" href="#array-dynamic-allocation" title="Permanent link">&para;</a></h1>
+<p>In some cases, you dont know the size of the array at compile time. In this case, you can use dynamic memory allocation to allocate the array at runtime. This is done using the <code>new</code> operator, which allocates a block of memory on the heap and returns a pointer to the beginning of the block. For example, to allocate an array of 5 integers on the heap, you would use the following code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span><span class="w"> </span><span class="c1">// Allocate a block of memory on the heap</span>
+</code></pre></div>
+<p>The above code allocates a block of memory on the heap that is large enough to hold 5 integers. The <code>new</code> operator returns a pointer to the beginning of the block, which is assigned to the pointer variable <code>arr</code>. You can then use the pointer to access the elements of the array. You can access individual elements of the array using the array subscript notation:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">arr</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">arr</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">40</span><span class="p">;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">arr</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span>
+</code></pre></div>
+<p>When you are done using the array, you should free the memory using the <code>delete</code> operator. For example, to free the memory allocated to the array in the previous example, you would use the following code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">delete</span><span class="p">[]</span><span class="w"> </span><span class="n">arr</span><span class="p">;</span><span class="w"> </span><span class="c1">// Free the memory by telling the operation system you are done with it</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"> </span><span class="c1">// Reset the pointer to null to avoid dangling pointers and other bugs</span>
+</code></pre></div>
+<p>The <code>delete</code> operator takes a pointer to the beginning of the block of memory to free. The <code>[]</code> operator is used to indicate that the block of memory contains an array, and that the <code>delete</code> operator should free the entire array.</p>
+<h1 id="smart-pointers-to-rescue">Smart pointers to rescue<a class="headerlink" href="#smart-pointers-to-rescue" title="Permanent link">&para;</a></h1>
+<p>You probably noticed the number of bugs and vulnerabilities that can be caused by improper memory management. To help address that, C++ introduced smart pointers. The general purpose smart contract you will be mostly using is <code>shared_ptr</code> that in the end of the scope and when all references to it become 0 will automatically free the memory. The other smart pointers are <code>unique_ptr</code> and <code>weak_ptr</code> that are used in more advanced scenarios. But for now, we will focus on <code>shared_ptr</code>.</p>
+<p>In C++11, smart pointers were introduced to help manage memory allocation and deallocation. Smart pointers are classes that wrap a pointer to a dynamically allocated object and provide additional features such as automatic memory management. The most commonly used smart pointers are <code>std::unique_ptr</code> and <code>std::shared_ptr</code>. The <code>std::unique_ptr</code> class is a smart pointer that owns and manages another object through a pointer and disposes of that object when the <code>std::unique_ptr</code> goes out of scope. The <code>std::shared_ptr</code> class is a smart pointer that retains shared ownership of an object through a pointer. Several <code>std::shared_ptr</code> objects may own the same object. The object is destroyed and its memory deallocated when either of the following happens:</p>
+<ul>
+<li>the last remaining <code>std::shared_ptr</code> owning the object is:<ul>
+<li>destroyed</li>
+<li>is assigned another pointer via <code>operator=</code> or <code>reset()</code> </li>
+<li>is reset or released </li>
+<li>moved from</li>
+<li>is swapped with another <code>std::shared_ptr</code> using <code>swap()</code></li>
+<li>the function <code>std::shared_ptr::swap()</code> is called with the last remaining <code>std::shared_ptr</code> owning the object as an argument</li>
+</ul>
+</li>
+<li>the object is no longer reachable from the program (for example, when the program terminates)</li>
+<li>the program:<ul>
+<li>throws an exception that is not caught within the same thread</li>
+<li>calls terminating calls such as <code>std::terminate()</code>, <code>std::abort()</code>, <code>std::exit()</code>, or <code>std::quick_exit()</code></li>
+</ul>
+</li>
+</ul>
+<p>To create a dynamic array of int using shared pointers, you can use the std::shared_ptr class template. Here's an example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span><span class="c1"> // for std::shared_ptr</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">[]</span><span class="o">&gt;</span><span class="w"> </span><span class="n">arr</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="mi">5</span><span class="p">]);</span>
+</code></pre></div>
+<p>This creates a shared pointer to an array of 5 integers. The <code>new int[5]</code> expression dynamically allocates memory for the array on the heap, and the shared pointer takes ownership of the memory. When the shared pointer goes out of scope, the memory is automatically freed.</p>
+<p>You can access individual elements of the array using the array subscript notation, just like with a regular C-style array:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">arr</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">arr</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">40</span><span class="p">;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">arr</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span>
+</code></pre></div>
+<p>To deallocate the memory, you don't need to call delete[] explicitly, because the shared pointer takes care of it automatically. When the last shared pointer that points to the array goes out of scope or is explicitly reset, the memory is deallocated automatically:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">arr</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span><span class="w"> </span><span class="c1">// deallocates the memory and reset the shared pointer to null to avoid dangling pointers and other bugs</span>
+</code></pre></div>
+<p>Shared pointers provide a convenient and safe way to manage dynamic memory in C++, because they automatically handle memory allocation and deallocation, and help prevent memory leaks and dangling pointers.</p>
+<p>Smart pointers are no silver bullet. They are not a replacement for proper memory management, but they can help you avoid common memory management bugs and vulnerabilities. For example, smart pointers can help you avoid memory leaks, dangling pointers, and double frees. They can also help you avoid buffer overflow vulnerabilities by providing bounds checking functions.</p>
+<h1 id="passing-arrays-to-functions">Passing arrays to functions<a class="headerlink" href="#passing-arrays-to-functions" title="Permanent link">&para;</a></h1>
+<p>You can pass arrays to functions in C++ in the same way that you pass any other variable to a function. For example, to pass an array to a function, you would use the following code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">printArray</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">arr</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"> </span><span class="c1">// Pass the array by reference to avoid copying the entire array</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="p">{</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39; &#39;</span><span class="p">;</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="p">}</span>
+</code></pre></div>
+<h1 id="extra-curiosities">Extra curiosities<a class="headerlink" href="#extra-curiosities" title="Permanent link">&para;</a></h1>
 <p>Context on common bugs and vulnerabilities:
 - <a href="https://cwe.mitre.org/data/definitions/1387.html">Weaknesses in the 2022 CWE Top 25 Most Dangerous Software Weaknesses</a>
-- <a href="https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8397.pdf">US Government enforces cyber security requirements</a></p>
-<h1 id="stack-allocation">Stack allocation<a class="headerlink" href="#stack-allocation" title="Permanent link">&para;</a></h1>
-<p>All variable</p>
-<pre class="mermaid"><code>flowchart TB
-  id1[[This is the text in the box]]</code></pre>
-<h1 id="heap-allocation">Heap Allocation<a class="headerlink" href="#heap-allocation" title="Permanent link">&para;</a></h1>
-<p>https://en.cppreference.com/w/cpp/language/array</p>
+- <a href="https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8397.pdf">US Government enforces cyber security requirements</a>
+- https://en.cppreference.com/w/cpp/language/array</p>
 
 
   
@@ -1078,10 +1169,10 @@
 
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
-          </a>
+          </button>
         
       </main>
       
@@ -1168,7 +1259,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fc8c2696.min.js"></script>
+      <script src="../../assets/javascripts/bundle.19047be9.min.js"></script>
       
     
   </body>
