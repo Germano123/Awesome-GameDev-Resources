@@ -67,7 +67,7 @@ include intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/compiler_depend.m
 include intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/progress.make
 
 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test: out/02-extremelyBasic.js
-	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && /emsdk/node/14.18.2_64bit/bin/node --experimental-wasm-bulk-memory --experimental-wasm-threads /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/out/02-extremelyBasic.js < /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling/extremelyBasic.test.01.in > yourOutput.out
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && /emsdk/node/15.14.0_64bit/bin/node --experimental-wasm-bulk-memory --experimental-wasm-threads /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/out/02-extremelyBasic.js < /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling/extremelyBasic.test.01.in > yourOutput.out
 	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && diff yourOutput.out /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling/extremelyBasic.test.01.out
 
 02-extremelyBasic-Test: intro/02-tooling/CMakeFiles/02-extremelyBasic-Test
