@@ -62,7 +62,7 @@
       "content_type": "binary/octet-stream",
       "state": "uploaded",
       "size": 36240,
-      "download_count": 8764,
+      "download_count": 9969,
       "created_at": "2023-03-05T12:11:20Z",
       "updated_at": "2023-03-05T12:11:20Z",
       "browser_download_url": "https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.1/CPM.cmake"
@@ -96,7 +96,7 @@
       "content_type": "binary/octet-stream",
       "state": "uploaded",
       "size": 1075,
-      "download_count": 3024,
+      "download_count": 3213,
       "created_at": "2023-03-05T12:11:21Z",
       "updated_at": "2023-03-05T12:11:21Z",
       "browser_download_url": "https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.1/get_cpm.cmake"
