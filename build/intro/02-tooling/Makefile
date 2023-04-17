@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP
+CMAKE_SOURCE_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
+CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling//CMakeFiles/progress.marks
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling//CMakeFiles/progress.marks
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/clean
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/preinstall
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/preinstall
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 intro/02-tooling/CMakeFiles/02-hello.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-hello.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-hello.dir/rule
 .PHONY : intro/02-tooling/CMakeFiles/02-hello.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ intro/02-tooling/CMakeFiles/02-hello.dir/rule:
 
 # fast build rule for target.
 02-hello/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/build
 .PHONY : 02-hello/fast
 
 # Convenience name for target.
 intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule
 .PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule:
 
 # fast build rule for target.
 02-extremelyBasic/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build
 .PHONY : 02-extremelyBasic/fast
 
 # Convenience name for target.
 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule
 .PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule
 
 # Convenience name for target.
@@ -155,7 +155,7 @@ intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule:
 
 # fast build rule for target.
 02-extremelyBasic-Test/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build
 .PHONY : 02-extremelyBasic-Test/fast
 
 extremelyBasic.o: extremelyBasic.cpp.o
@@ -163,7 +163,7 @@ extremelyBasic.o: extremelyBasic.cpp.o
 
 # target to build an object file
 extremelyBasic.cpp.o:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.o
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.o
 .PHONY : extremelyBasic.cpp.o
 
 extremelyBasic.i: extremelyBasic.cpp.i
@@ -171,7 +171,7 @@ extremelyBasic.i: extremelyBasic.cpp.i
 
 # target to preprocess a source file
 extremelyBasic.cpp.i:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.i
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.i
 .PHONY : extremelyBasic.cpp.i
 
 extremelyBasic.s: extremelyBasic.cpp.s
@@ -179,7 +179,7 @@ extremelyBasic.s: extremelyBasic.cpp.s
 
 # target to generate assembly for a file
 extremelyBasic.cpp.s:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.s
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.s
 .PHONY : extremelyBasic.cpp.s
 
 hello.o: hello.cpp.o
@@ -187,7 +187,7 @@ hello.o: hello.cpp.o
 
 # target to build an object file
 hello.cpp.o:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o
 .PHONY : hello.cpp.o
 
 hello.i: hello.cpp.i
@@ -195,7 +195,7 @@ hello.i: hello.cpp.i
 
 # target to preprocess a source file
 hello.cpp.i:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.i
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.i
 .PHONY : hello.cpp.i
 
 hello.s: hello.cpp.s
@@ -203,7 +203,7 @@ hello.s: hello.cpp.s
 
 # target to generate assembly for a file
 hello.cpp.s:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.s
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.s
 .PHONY : hello.cpp.s
 
 # Help Target
@@ -234,6 +234,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

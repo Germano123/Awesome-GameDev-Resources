@@ -1,4 +1,4 @@
-# Install script for directory: /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/03-datatypes
+# Install script for directory: /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/03-datatypes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP
+CMAKE_SOURCE_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
+CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/04-conditionals//CMakeFiles/progress.marks
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/04-conditionals//CMakeFiles/progress.marks
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/clean
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/preinstall
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/preinstall
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule
 .PHONY : intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule:
 
 # fast build rule for target.
 04-coordinates/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/build
 .PHONY : 04-coordinates/fast
 
 coordinates.o: coordinates.cpp.o
@@ -135,7 +135,7 @@ coordinates.o: coordinates.cpp.o
 
 # target to build an object file
 coordinates.cpp.o:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o
 .PHONY : coordinates.cpp.o
 
 coordinates.i: coordinates.cpp.i
@@ -143,7 +143,7 @@ coordinates.i: coordinates.cpp.i
 
 # target to preprocess a source file
 coordinates.cpp.i:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.i
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.i
 .PHONY : coordinates.cpp.i
 
 coordinates.s: coordinates.cpp.s
@@ -151,7 +151,7 @@ coordinates.s: coordinates.cpp.s
 
 # target to generate assembly for a file
 coordinates.cpp.s:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.s
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.s
 .PHONY : coordinates.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation
+# Install script for directory: /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

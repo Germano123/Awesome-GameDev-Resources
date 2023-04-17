@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP
+CMAKE_SOURCE_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
+CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/03-datatypes//CMakeFiles/progress.marks
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/03-datatypes//CMakeFiles/progress.marks
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/clean
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/preinstall
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/preinstall
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/rule
 .PHONY : intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/rule:
 
 # fast build rule for target.
 03-bankNotesAndCoins/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build
 .PHONY : 03-bankNotesAndCoins/fast
 
 # Convenience name for target.
 intro/03-datatypes/CMakeFiles/03-volume.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-volume.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-volume.dir/rule
 .PHONY : intro/03-datatypes/CMakeFiles/03-volume.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ intro/03-datatypes/CMakeFiles/03-volume.dir/rule:
 
 # fast build rule for target.
 03-volume/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/build
 .PHONY : 03-volume/fast
 
 # Convenience name for target.
 intro/03-datatypes/CMakeFiles/03-distance.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-distance.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-distance.dir/rule
 .PHONY : intro/03-datatypes/CMakeFiles/03-distance.dir/rule
 
 # Convenience name for target.
@@ -155,7 +155,7 @@ intro/03-datatypes/CMakeFiles/03-distance.dir/rule:
 
 # fast build rule for target.
 03-distance/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/build
 .PHONY : 03-distance/fast
 
 bankNotesAndCoins.o: bankNotesAndCoins.cpp.o
@@ -163,7 +163,7 @@ bankNotesAndCoins.o: bankNotesAndCoins.cpp.o
 
 # target to build an object file
 bankNotesAndCoins.cpp.o:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/bankNotesAndCoins.cpp.o
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/bankNotesAndCoins.cpp.o
 .PHONY : bankNotesAndCoins.cpp.o
 
 bankNotesAndCoins.i: bankNotesAndCoins.cpp.i
@@ -171,7 +171,7 @@ bankNotesAndCoins.i: bankNotesAndCoins.cpp.i
 
 # target to preprocess a source file
 bankNotesAndCoins.cpp.i:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/bankNotesAndCoins.cpp.i
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/bankNotesAndCoins.cpp.i
 .PHONY : bankNotesAndCoins.cpp.i
 
 bankNotesAndCoins.s: bankNotesAndCoins.cpp.s
@@ -179,7 +179,7 @@ bankNotesAndCoins.s: bankNotesAndCoins.cpp.s
 
 # target to generate assembly for a file
 bankNotesAndCoins.cpp.s:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/bankNotesAndCoins.cpp.s
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/bankNotesAndCoins.cpp.s
 .PHONY : bankNotesAndCoins.cpp.s
 
 distance.o: distance.cpp.o
@@ -187,7 +187,7 @@ distance.o: distance.cpp.o
 
 # target to build an object file
 distance.cpp.o:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/distance.cpp.o
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/distance.cpp.o
 .PHONY : distance.cpp.o
 
 distance.i: distance.cpp.i
@@ -195,7 +195,7 @@ distance.i: distance.cpp.i
 
 # target to preprocess a source file
 distance.cpp.i:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/distance.cpp.i
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/distance.cpp.i
 .PHONY : distance.cpp.i
 
 distance.s: distance.cpp.s
@@ -203,7 +203,7 @@ distance.s: distance.cpp.s
 
 # target to generate assembly for a file
 distance.cpp.s:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/distance.cpp.s
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/distance.cpp.s
 .PHONY : distance.cpp.s
 
 volume.o: volume.cpp.o
@@ -211,7 +211,7 @@ volume.o: volume.cpp.o
 
 # target to build an object file
 volume.cpp.o:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/volume.cpp.o
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/volume.cpp.o
 .PHONY : volume.cpp.o
 
 volume.i: volume.cpp.i
@@ -219,7 +219,7 @@ volume.i: volume.cpp.i
 
 # target to preprocess a source file
 volume.cpp.i:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/volume.cpp.i
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/volume.cpp.i
 .PHONY : volume.cpp.i
 
 volume.s: volume.cpp.s
@@ -227,7 +227,7 @@ volume.s: volume.cpp.s
 
 # target to generate assembly for a file
 volume.cpp.s:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/volume.cpp.s
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/volume.cpp.s
 .PHONY : volume.cpp.s
 
 # Help Target
@@ -261,6 +261,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

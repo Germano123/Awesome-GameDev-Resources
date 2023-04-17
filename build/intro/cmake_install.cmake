@@ -1,4 +1,4 @@
-# Install script for directory: /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro
+# Install script for directory: /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/cmake_install.cmake")
+  include("/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/03-datatypes/cmake_install.cmake")
+  include("/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/03-datatypes/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/04-conditionals/cmake_install.cmake")
+  include("/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/04-conditionals/cmake_install.cmake")
 endif()
 

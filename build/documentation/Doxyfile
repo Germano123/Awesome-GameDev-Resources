@@ -3,22 +3,22 @@
 # To create a new Doxyfile containing all available options, call `doxygen -g`
 
 # Get Project name and version from CMake
-PROJECT_NAME = Awesome Cpp Course
+PROJECT_NAME = Awesome GameDev Resources
 PROJECT_NUMBER = 
 
 # Add sources
-INPUT = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation/../README.md /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation/../include /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation/../documentation/pages /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation/../intro /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation/../portfolio /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation/../artificialintelligence
+INPUT = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../README.md /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../include /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../documentation/pages /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../intro /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../portfolio /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../artificialintelligence
 FILE_PATTERNS = *.c *.cpp *.h *.hpp *.md *.dox
 EXTRACT_ALL = YES
 RECURSIVE = YES
-OUTPUT_DIRECTORY = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation/doxygen
+OUTPUT_DIRECTORY = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/documentation/doxygen
 
 # Use the README as a main page
-USE_MDFILE_AS_MAINPAGE = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation/../README.md
+USE_MDFILE_AS_MAINPAGE = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../README.md
 
 # set relative include paths
 FULL_PATH_NAMES = NO
-STRIP_FROM_PATH = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation/..
+STRIP_FROM_PATH = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/..
 
 # We use m.css to generate the html documentation, so we only need XML output
 GENERATE_XML = YES

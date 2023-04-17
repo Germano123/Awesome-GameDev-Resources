@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP
+CMAKE_SOURCE_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
+CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -196,14 +196,14 @@ intro/04-conditionals/clean: intro/04-conditionals/CMakeFiles/04-coordinates.dir
 intro/02-tooling/CMakeFiles/02-hello.dir/all:
 	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/depend
 	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-hello.dir/build.make intro/02-tooling/CMakeFiles/02-hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=3,4 "Built target 02-hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=3,4 "Built target 02-hello"
 .PHONY : intro/02-tooling/CMakeFiles/02-hello.dir/all
 
 # Build rule for subdir invocation for target.
 intro/02-tooling/CMakeFiles/02-hello.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-hello.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : intro/02-tooling/CMakeFiles/02-hello.dir/rule
 
 # Convenience name for target.
@@ -222,14 +222,14 @@ intro/02-tooling/CMakeFiles/02-hello.dir/clean:
 intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/all:
 	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/depend
 	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=1,2 "Built target 02-extremelyBasic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=1,2 "Built target 02-extremelyBasic"
 .PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/all
 
 # Build rule for subdir invocation for target.
 intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/rule
 
 # Convenience name for target.
@@ -248,14 +248,14 @@ intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/clean:
 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/all: intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/all
 	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/depend
 	$(MAKE) $(MAKESILENT) -f intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build.make intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target 02-extremelyBasic-Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target 02-extremelyBasic-Test"
 .PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/all
 
 # Build rule for subdir invocation for target.
 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/rule
 
 # Convenience name for target.
@@ -274,14 +274,14 @@ intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/clean:
 intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/all:
 	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/depend
 	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build.make intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=5,6 "Built target 03-bankNotesAndCoins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=5,6 "Built target 03-bankNotesAndCoins"
 .PHONY : intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/all
 
 # Build rule for subdir invocation for target.
 intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/rule
 
 # Convenience name for target.
@@ -300,14 +300,14 @@ intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/clean:
 intro/03-datatypes/CMakeFiles/03-volume.dir/all:
 	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/depend
 	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-volume.dir/build.make intro/03-datatypes/CMakeFiles/03-volume.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=9,10 "Built target 03-volume"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=9,10 "Built target 03-volume"
 .PHONY : intro/03-datatypes/CMakeFiles/03-volume.dir/all
 
 # Build rule for subdir invocation for target.
 intro/03-datatypes/CMakeFiles/03-volume.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-volume.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : intro/03-datatypes/CMakeFiles/03-volume.dir/rule
 
 # Convenience name for target.
@@ -326,14 +326,14 @@ intro/03-datatypes/CMakeFiles/03-volume.dir/clean:
 intro/03-datatypes/CMakeFiles/03-distance.dir/all:
 	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/depend
 	$(MAKE) $(MAKESILENT) -f intro/03-datatypes/CMakeFiles/03-distance.dir/build.make intro/03-datatypes/CMakeFiles/03-distance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=7,8 "Built target 03-distance"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=7,8 "Built target 03-distance"
 .PHONY : intro/03-datatypes/CMakeFiles/03-distance.dir/all
 
 # Build rule for subdir invocation for target.
 intro/03-datatypes/CMakeFiles/03-distance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/03-datatypes/CMakeFiles/03-distance.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : intro/03-datatypes/CMakeFiles/03-distance.dir/rule
 
 # Convenience name for target.
@@ -352,14 +352,14 @@ intro/03-datatypes/CMakeFiles/03-distance.dir/clean:
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/all:
 	$(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/depend
 	$(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=11,12 "Built target 04-coordinates"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=11,12 "Built target 04-coordinates"
 .PHONY : intro/04-conditionals/CMakeFiles/04-coordinates.dir/all
 
 # Build rule for subdir invocation for target.
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro/04-conditionals/CMakeFiles/04-coordinates.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule
 
 # Convenience name for target.
@@ -378,14 +378,14 @@ intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean:
 documentation/CMakeFiles/GenerateDocs.dir/all:
 	$(MAKE) $(MAKESILENT) -f documentation/CMakeFiles/GenerateDocs.dir/build.make documentation/CMakeFiles/GenerateDocs.dir/depend
 	$(MAKE) $(MAKESILENT) -f documentation/CMakeFiles/GenerateDocs.dir/build.make documentation/CMakeFiles/GenerateDocs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target GenerateDocs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target GenerateDocs"
 .PHONY : documentation/CMakeFiles/GenerateDocs.dir/all
 
 # Build rule for subdir invocation for target.
 documentation/CMakeFiles/GenerateDocs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 documentation/CMakeFiles/GenerateDocs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : documentation/CMakeFiles/GenerateDocs.dir/rule
 
 # Convenience name for target.
@@ -404,14 +404,14 @@ documentation/CMakeFiles/GenerateDocs.dir/clean:
 _deps/format.cmake-build/CMakeFiles/clang-format.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/clang-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/clang-format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target clang-format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target clang-format"
 .PHONY : _deps/format.cmake-build/CMakeFiles/clang-format.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/format.cmake-build/CMakeFiles/clang-format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/clang-format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : _deps/format.cmake-build/CMakeFiles/clang-format.dir/rule
 
 # Convenience name for target.
@@ -430,14 +430,14 @@ _deps/format.cmake-build/CMakeFiles/clang-format.dir/clean:
 _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target check-clang-format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target check-clang-format"
 .PHONY : _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/rule
 
 # Convenience name for target.
@@ -456,14 +456,14 @@ _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/clean:
 _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target fix-clang-format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target fix-clang-format"
 .PHONY : _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/rule
 
 # Convenience name for target.
@@ -482,14 +482,14 @@ _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/clean:
 _deps/format.cmake-build/CMakeFiles/cmake-format.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/cmake-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/cmake-format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target cmake-format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target cmake-format"
 .PHONY : _deps/format.cmake-build/CMakeFiles/cmake-format.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/format.cmake-build/CMakeFiles/cmake-format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/cmake-format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : _deps/format.cmake-build/CMakeFiles/cmake-format.dir/rule
 
 # Convenience name for target.
@@ -508,14 +508,14 @@ _deps/format.cmake-build/CMakeFiles/cmake-format.dir/clean:
 _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target check-cmake-format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target check-cmake-format"
 .PHONY : _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/rule
 
 # Convenience name for target.
@@ -534,14 +534,14 @@ _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/clean:
 _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target fix-cmake-format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target fix-cmake-format"
 .PHONY : _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/rule
 
 # Convenience name for target.
@@ -561,14 +561,14 @@ _deps/format.cmake-build/CMakeFiles/format.dir/all: _deps/format.cmake-build/CMa
 _deps/format.cmake-build/CMakeFiles/format.dir/all: _deps/format.cmake-build/CMakeFiles/cmake-format.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/format.dir/build.make _deps/format.cmake-build/CMakeFiles/format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/format.dir/build.make _deps/format.cmake-build/CMakeFiles/format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target format"
 .PHONY : _deps/format.cmake-build/CMakeFiles/format.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/format.cmake-build/CMakeFiles/format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : _deps/format.cmake-build/CMakeFiles/format.dir/rule
 
 # Convenience name for target.
@@ -588,14 +588,14 @@ _deps/format.cmake-build/CMakeFiles/check-format.dir/all: _deps/format.cmake-bui
 _deps/format.cmake-build/CMakeFiles/check-format.dir/all: _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target check-format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target check-format"
 .PHONY : _deps/format.cmake-build/CMakeFiles/check-format.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/format.cmake-build/CMakeFiles/check-format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/check-format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : _deps/format.cmake-build/CMakeFiles/check-format.dir/rule
 
 # Convenience name for target.
@@ -615,14 +615,14 @@ _deps/format.cmake-build/CMakeFiles/fix-format.dir/all: _deps/format.cmake-build
 _deps/format.cmake-build/CMakeFiles/fix-format.dir/all: _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num= "Built target fix-format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num= "Built target fix-format"
 .PHONY : _deps/format.cmake-build/CMakeFiles/fix-format.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/format.cmake-build/CMakeFiles/fix-format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/fix-format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : _deps/format.cmake-build/CMakeFiles/fix-format.dir/rule
 
 # Convenience name for target.

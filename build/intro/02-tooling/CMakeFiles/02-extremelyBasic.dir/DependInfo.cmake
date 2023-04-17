@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/02-tooling/extremelyBasic.cpp" "intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.o" "gcc" "intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.o.d"
+  "/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling/extremelyBasic.cpp" "intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.o" "gcc" "intro/02-tooling/CMakeFiles/02-extremelyBasic.dir/extremelyBasic.cpp.o.d"
   )
 
 # Targets to which this target links.

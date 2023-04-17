@@ -1,4 +1,4 @@
-# Install script for directory: /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/format.cmake/17e103764947115e78d95ecc29c4bee54dc64e08
+# Install script for directory: /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/cpm_modules/format.cmake/17e103764947115e78d95ecc29c4bee54dc64e08
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

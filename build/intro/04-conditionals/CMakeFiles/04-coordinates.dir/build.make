@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP
+CMAKE_SOURCE_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
+CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build
 
 # Include any dependencies generated for this target.
 include intro/04-conditionals/CMakeFiles/04-coordinates.dir/depend.make
@@ -72,16 +72,16 @@ include intro/04-conditionals/CMakeFiles/04-coordinates.dir/flags.make
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o: intro/04-conditionals/CMakeFiles/04-coordinates.dir/flags.make
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o: ../intro/04-conditionals/coordinates.cpp
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o: intro/04-conditionals/CMakeFiles/04-coordinates.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o"
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/04-conditionals && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o -MF CMakeFiles/04-coordinates.dir/coordinates.cpp.o.d -o CMakeFiles/04-coordinates.dir/coordinates.cpp.o -c /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/04-conditionals/coordinates.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o"
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/04-conditionals && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o -MF CMakeFiles/04-coordinates.dir/coordinates.cpp.o.d -o CMakeFiles/04-coordinates.dir/coordinates.cpp.o -c /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/04-conditionals/coordinates.cpp
 
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/04-coordinates.dir/coordinates.cpp.i"
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/04-conditionals && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/04-conditionals/coordinates.cpp > CMakeFiles/04-coordinates.dir/coordinates.cpp.i
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/04-conditionals && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/04-conditionals/coordinates.cpp > CMakeFiles/04-coordinates.dir/coordinates.cpp.i
 
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/04-coordinates.dir/coordinates.cpp.s"
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/04-conditionals && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/04-conditionals/coordinates.cpp -o CMakeFiles/04-coordinates.dir/coordinates.cpp.s
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/04-conditionals && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/04-conditionals/coordinates.cpp -o CMakeFiles/04-coordinates.dir/coordinates.cpp.s
 
 # Object files for target 04-coordinates
 04__coordinates_OBJECTS = \
@@ -94,18 +94,18 @@ out/04-coordinates.js: intro/04-conditionals/CMakeFiles/04-coordinates.dir/coord
 out/04-coordinates.js: intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make
 out/04-coordinates.js: intro/04-conditionals/CMakeFiles/04-coordinates.dir/objects1.rsp
 out/04-coordinates.js: intro/04-conditionals/CMakeFiles/04-coordinates.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../out/04-coordinates.js"
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/04-conditionals && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/04-coordinates.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../out/04-coordinates.js"
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/04-conditionals && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/04-coordinates.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/build: out/04-coordinates.js
 .PHONY : intro/04-conditionals/CMakeFiles/04-coordinates.dir/build
 
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/04-conditionals && $(CMAKE_COMMAND) -P CMakeFiles/04-coordinates.dir/cmake_clean.cmake
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/04-conditionals && $(CMAKE_COMMAND) -P CMakeFiles/04-coordinates.dir/cmake_clean.cmake
 .PHONY : intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean
 
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/depend:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/04-conditionals /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/04-conditionals /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/04-conditionals/CMakeFiles/04-coordinates.dir/DependInfo.cmake --color=$(COLOR)
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/04-conditionals /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/04-conditionals /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/04-conditionals/CMakeFiles/04-coordinates.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : intro/04-conditionals/CMakeFiles/04-coordinates.dir/depend
 

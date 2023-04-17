@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP
+CMAKE_SOURCE_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
+CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build//CMakeFiles/progress.marks
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles 0
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/format.cmake-build//CMakeFiles/progress.marks
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/clean
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/preinstall
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/preinstall
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/format.cmake-build/CMakeFiles/clang-format.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/clang-format.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/clang-format.dir/rule
 .PHONY : _deps/format.cmake-build/CMakeFiles/clang-format.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ clang-format: _deps/format.cmake-build/CMakeFiles/clang-format.dir/rule
 
 # fast build rule for target.
 clang-format/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/clang-format.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/clang-format.dir/build
 .PHONY : clang-format/fast
 
 # Convenience name for target.
 _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/rule
 .PHONY : _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ check-clang-format: _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/r
 
 # fast build rule for target.
 check-clang-format/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-clang-format.dir/build
 .PHONY : check-clang-format/fast
 
 # Convenience name for target.
 _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/rule
 .PHONY : _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/rule
 
 # Convenience name for target.
@@ -155,12 +155,12 @@ fix-clang-format: _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/rule
 
 # fast build rule for target.
 fix-clang-format/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-clang-format.dir/build
 .PHONY : fix-clang-format/fast
 
 # Convenience name for target.
 _deps/format.cmake-build/CMakeFiles/cmake-format.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/cmake-format.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/cmake-format.dir/rule
 .PHONY : _deps/format.cmake-build/CMakeFiles/cmake-format.dir/rule
 
 # Convenience name for target.
@@ -169,12 +169,12 @@ cmake-format: _deps/format.cmake-build/CMakeFiles/cmake-format.dir/rule
 
 # fast build rule for target.
 cmake-format/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/cmake-format.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/cmake-format.dir/build
 .PHONY : cmake-format/fast
 
 # Convenience name for target.
 _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/rule
 .PHONY : _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ check-cmake-format: _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/r
 
 # fast build rule for target.
 check-cmake-format/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-cmake-format.dir/build
 .PHONY : check-cmake-format/fast
 
 # Convenience name for target.
 _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/rule
 .PHONY : _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/rule
 
 # Convenience name for target.
@@ -197,12 +197,12 @@ fix-cmake-format: _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/rule
 
 # fast build rule for target.
 fix-cmake-format/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-cmake-format.dir/build
 .PHONY : fix-cmake-format/fast
 
 # Convenience name for target.
 _deps/format.cmake-build/CMakeFiles/format.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/format.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/format.dir/rule
 .PHONY : _deps/format.cmake-build/CMakeFiles/format.dir/rule
 
 # Convenience name for target.
@@ -211,12 +211,12 @@ format: _deps/format.cmake-build/CMakeFiles/format.dir/rule
 
 # fast build rule for target.
 format/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/format.dir/build.make _deps/format.cmake-build/CMakeFiles/format.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/format.dir/build.make _deps/format.cmake-build/CMakeFiles/format.dir/build
 .PHONY : format/fast
 
 # Convenience name for target.
 _deps/format.cmake-build/CMakeFiles/check-format.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/check-format.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/check-format.dir/rule
 .PHONY : _deps/format.cmake-build/CMakeFiles/check-format.dir/rule
 
 # Convenience name for target.
@@ -225,12 +225,12 @@ check-format: _deps/format.cmake-build/CMakeFiles/check-format.dir/rule
 
 # fast build rule for target.
 check-format/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-format.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/check-format.dir/build.make _deps/format.cmake-build/CMakeFiles/check-format.dir/build
 .PHONY : check-format/fast
 
 # Convenience name for target.
 _deps/format.cmake-build/CMakeFiles/fix-format.dir/rule:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/fix-format.dir/rule
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/format.cmake-build/CMakeFiles/fix-format.dir/rule
 .PHONY : _deps/format.cmake-build/CMakeFiles/fix-format.dir/rule
 
 # Convenience name for target.
@@ -239,7 +239,7 @@ fix-format: _deps/format.cmake-build/CMakeFiles/fix-format.dir/rule
 
 # fast build rule for target.
 fix-format/fast:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-format.dir/build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(MAKE) $(MAKESILENT) -f _deps/format.cmake-build/CMakeFiles/fix-format.dir/build.make _deps/format.cmake-build/CMakeFiles/fix-format.dir/build
 .PHONY : fix-format/fast
 
 # Help Target
@@ -270,6 +270,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

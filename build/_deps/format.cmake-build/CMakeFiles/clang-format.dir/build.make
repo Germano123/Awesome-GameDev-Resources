@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP
+CMAKE_SOURCE_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
+CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build
 
 # Utility rule file for clang-format.
 
@@ -67,8 +67,8 @@ include _deps/format.cmake-build/CMakeFiles/clang-format.dir/compiler_depend.mak
 include _deps/format.cmake-build/CMakeFiles/clang-format.dir/progress.make
 
 _deps/format.cmake-build/CMakeFiles/clang-format:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build && /usr/bin/cmake -E echo Format.cmake:\ cannot\ run\ because\ clang-format\ and/or\ python\ not\ found
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build && /usr/bin/cmake -E false
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/format.cmake-build && /usr/bin/cmake -E echo Format.cmake:\ cannot\ run\ because\ clang-format\ and/or\ python\ not\ found
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/format.cmake-build && /usr/bin/cmake -E false
 
 clang-format: _deps/format.cmake-build/CMakeFiles/clang-format
 clang-format: _deps/format.cmake-build/CMakeFiles/clang-format.dir/build.make
@@ -79,10 +79,10 @@ _deps/format.cmake-build/CMakeFiles/clang-format.dir/build: clang-format
 .PHONY : _deps/format.cmake-build/CMakeFiles/clang-format.dir/build
 
 _deps/format.cmake-build/CMakeFiles/clang-format.dir/clean:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build && $(CMAKE_COMMAND) -P CMakeFiles/clang-format.dir/cmake_clean.cmake
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/format.cmake-build && $(CMAKE_COMMAND) -P CMakeFiles/clang-format.dir/cmake_clean.cmake
 .PHONY : _deps/format.cmake-build/CMakeFiles/clang-format.dir/clean
 
 _deps/format.cmake-build/CMakeFiles/clang-format.dir/depend:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/cpm_modules/format.cmake/17e103764947115e78d95ecc29c4bee54dc64e08 /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/_deps/format.cmake-build/CMakeFiles/clang-format.dir/DependInfo.cmake --color=$(COLOR)
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/cpm_modules/format.cmake/17e103764947115e78d95ecc29c4bee54dc64e08 /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/format.cmake-build /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/format.cmake-build/CMakeFiles/clang-format.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/format.cmake-build/CMakeFiles/clang-format.dir/depend
 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/03-datatypes/bankNotesAndCoins.cpp" "intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/bankNotesAndCoins.cpp.o" "gcc" "intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/bankNotesAndCoins.cpp.o.d"
+  "/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/03-datatypes/bankNotesAndCoins.cpp" "intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/bankNotesAndCoins.cpp.o" "gcc" "intro/03-datatypes/CMakeFiles/03-bankNotesAndCoins.dir/bankNotesAndCoins.cpp.o.d"
   )
 
 # Targets to which this target links.

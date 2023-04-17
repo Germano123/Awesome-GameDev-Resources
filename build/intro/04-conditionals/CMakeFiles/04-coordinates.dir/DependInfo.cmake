@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/04-conditionals/coordinates.cpp" "intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o" "gcc" "intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o.d"
+  "/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/04-conditionals/coordinates.cpp" "intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o" "gcc" "intro/04-conditionals/CMakeFiles/04-coordinates.dir/coordinates.cpp.o.d"
   )
 
 # Targets to which this target links.

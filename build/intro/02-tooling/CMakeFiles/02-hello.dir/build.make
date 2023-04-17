@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP
+CMAKE_SOURCE_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
+CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build
 
 # Include any dependencies generated for this target.
 include intro/02-tooling/CMakeFiles/02-hello.dir/depend.make
@@ -72,16 +72,16 @@ include intro/02-tooling/CMakeFiles/02-hello.dir/flags.make
 intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o: intro/02-tooling/CMakeFiles/02-hello.dir/flags.make
 intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o: ../intro/02-tooling/hello.cpp
 intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o: intro/02-tooling/CMakeFiles/02-hello.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o"
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o -MF CMakeFiles/02-hello.dir/hello.cpp.o.d -o CMakeFiles/02-hello.dir/hello.cpp.o -c /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/02-tooling/hello.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o"
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o -MF CMakeFiles/02-hello.dir/hello.cpp.o.d -o CMakeFiles/02-hello.dir/hello.cpp.o -c /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling/hello.cpp
 
 intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/02-hello.dir/hello.cpp.i"
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/02-tooling/hello.cpp > CMakeFiles/02-hello.dir/hello.cpp.i
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling/hello.cpp > CMakeFiles/02-hello.dir/hello.cpp.i
 
 intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/02-hello.dir/hello.cpp.s"
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/02-tooling/hello.cpp -o CMakeFiles/02-hello.dir/hello.cpp.s
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && /emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling/hello.cpp -o CMakeFiles/02-hello.dir/hello.cpp.s
 
 # Object files for target 02-hello
 02__hello_OBJECTS = \
@@ -94,18 +94,18 @@ out/02-hello.js: intro/02-tooling/CMakeFiles/02-hello.dir/hello.cpp.o
 out/02-hello.js: intro/02-tooling/CMakeFiles/02-hello.dir/build.make
 out/02-hello.js: intro/02-tooling/CMakeFiles/02-hello.dir/objects1.rsp
 out/02-hello.js: intro/02-tooling/CMakeFiles/02-hello.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../out/02-hello.js"
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/02-hello.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../out/02-hello.js"
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/02-hello.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 intro/02-tooling/CMakeFiles/02-hello.dir/build: out/02-hello.js
 .PHONY : intro/02-tooling/CMakeFiles/02-hello.dir/build
 
 intro/02-tooling/CMakeFiles/02-hello.dir/clean:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling && $(CMAKE_COMMAND) -P CMakeFiles/02-hello.dir/cmake_clean.cmake
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && $(CMAKE_COMMAND) -P CMakeFiles/02-hello.dir/cmake_clean.cmake
 .PHONY : intro/02-tooling/CMakeFiles/02-hello.dir/clean
 
 intro/02-tooling/CMakeFiles/02-hello.dir/depend:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/02-tooling /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/CMakeFiles/02-hello.dir/DependInfo.cmake --color=$(COLOR)
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling/CMakeFiles/02-hello.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : intro/02-tooling/CMakeFiles/02-hello.dir/depend
 

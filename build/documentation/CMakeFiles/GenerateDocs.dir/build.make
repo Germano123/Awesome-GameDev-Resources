@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP
+CMAKE_SOURCE_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
+CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build
 
 # Utility rule file for GenerateDocs.
 
@@ -67,8 +67,8 @@ include documentation/CMakeFiles/GenerateDocs.dir/compiler_depend.make
 include documentation/CMakeFiles/GenerateDocs.dir/progress.make
 
 documentation/CMakeFiles/GenerateDocs:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP && mkdocs build
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP && echo Docs\ written\ to:\ /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation/../site
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources && mkdocs build
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources && echo Docs\ written\ to:\ /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../site
 
 GenerateDocs: documentation/CMakeFiles/GenerateDocs
 GenerateDocs: documentation/CMakeFiles/GenerateDocs.dir/build.make
@@ -79,10 +79,10 @@ documentation/CMakeFiles/GenerateDocs.dir/build: GenerateDocs
 .PHONY : documentation/CMakeFiles/GenerateDocs.dir/build
 
 documentation/CMakeFiles/GenerateDocs.dir/clean:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation && $(CMAKE_COMMAND) -P CMakeFiles/GenerateDocs.dir/cmake_clean.cmake
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/documentation && $(CMAKE_COMMAND) -P CMakeFiles/GenerateDocs.dir/cmake_clean.cmake
 .PHONY : documentation/CMakeFiles/GenerateDocs.dir/clean
 
 documentation/CMakeFiles/GenerateDocs.dir/depend:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/documentation /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/documentation/CMakeFiles/GenerateDocs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/documentation /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/documentation/CMakeFiles/GenerateDocs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : documentation/CMakeFiles/GenerateDocs.dir/depend
 

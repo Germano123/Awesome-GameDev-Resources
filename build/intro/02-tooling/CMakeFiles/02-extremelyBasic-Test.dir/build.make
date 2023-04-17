@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP
+CMAKE_SOURCE_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build
+CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build
 
 # Utility rule file for 02-extremelyBasic-Test.
 
@@ -67,8 +67,8 @@ include intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/compiler_depend.m
 include intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/progress.make
 
 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test: out/02-extremelyBasic.js
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling && /emsdk/node/14.18.2_64bit/bin/node --experimental-wasm-bulk-memory --experimental-wasm-threads /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/out/02-extremelyBasic.js < /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/02-tooling/extremelyBasic.test.01.in > yourOutput.out
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling && diff yourOutput.out /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/02-tooling/extremelyBasic.test.01.out
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && /emsdk/node/14.18.2_64bit/bin/node --experimental-wasm-bulk-memory --experimental-wasm-threads /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/out/02-extremelyBasic.js < /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling/extremelyBasic.test.01.in > yourOutput.out
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && diff yourOutput.out /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling/extremelyBasic.test.01.out
 
 02-extremelyBasic-Test: intro/02-tooling/CMakeFiles/02-extremelyBasic-Test
 02-extremelyBasic-Test: intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build.make
@@ -79,10 +79,10 @@ intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build: 02-extremelyBasic-
 .PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/build
 
 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/clean:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling && $(CMAKE_COMMAND) -P CMakeFiles/02-extremelyBasic-Test.dir/cmake_clean.cmake
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling && $(CMAKE_COMMAND) -P CMakeFiles/02-extremelyBasic-Test.dir/cmake_clean.cmake
 .PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/clean
 
 intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/depend:
-	cd /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/intro/02-tooling /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling /__w/Introduction-to-Game-Programming-With-CPP/Introduction-to-Game-Programming-With-CPP/build/intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/intro/02-tooling /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : intro/02-tooling/CMakeFiles/02-extremelyBasic-Test.dir/depend
 
