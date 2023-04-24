@@ -44,6 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/advancedcpp/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/documentation/cmake_install.cmake")
 endif()
 

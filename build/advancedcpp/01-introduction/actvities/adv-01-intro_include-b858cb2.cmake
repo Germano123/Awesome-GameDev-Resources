@@ -1,0 +1,5 @@
+if(EXISTS "/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/advancedcpp/01-introduction/actvities/adv-01-intro_tests-b858cb2.cmake")
+  include("/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/advancedcpp/01-introduction/actvities/adv-01-intro_tests-b858cb2.cmake")
+else()
+  add_test(adv-01-intro_NOT_BUILT-b858cb2 adv-01-intro_NOT_BUILT-b858cb2)
+endif()

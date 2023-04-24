@@ -6,6 +6,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://courses.tolstenko.net/advancedcpp/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/advancedcpp/01-introduction/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://courses.tolstenko.net/algorithms/</loc>
          <lastmod>2023-04-24</lastmod>
          <changefreq>daily</changefreq>
@@ -42,6 +52,121 @@
     </url>
     <url>
          <loc>https://courses.tolstenko.net/artificialintelligence/animation/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/CHANGELOG/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/CONTRIBUTING/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/html_generated/strapdown.js/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/assertions/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/benchmarks/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/build-systems/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/commandline/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/configuration/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/extensions/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/faq/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/features/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/logging/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/main/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/parameterized-tests/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/readme/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/reporters/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/roadmap/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/stringification/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/testcases/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/doc/markdown/tutorial/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/scripts/random_dev_notes/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://courses.tolstenko.net/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09/scripts/release_process/</loc>
          <lastmod>2023-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>

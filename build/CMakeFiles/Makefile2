@@ -64,19 +64,38 @@ CMAKE_BINARY_DIR = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/buil
 
 # The main recursive "all" target.
 all: intro/all
+all: advancedcpp/all
 all: documentation/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: intro/preinstall
+preinstall: advancedcpp/preinstall
 preinstall: documentation/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: _deps/doctest-build/clean
 clean: intro/clean
+clean: advancedcpp/clean
 clean: documentation/clean
 clean: _deps/format.cmake-build/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory _deps/doctest-build
+
+# Recursive "all" directory target.
+_deps/doctest-build/all:
+.PHONY : _deps/doctest-build/all
+
+# Recursive "preinstall" directory target.
+_deps/doctest-build/preinstall:
+.PHONY : _deps/doctest-build/preinstall
+
+# Recursive "clean" directory target.
+_deps/doctest-build/clean: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean
+.PHONY : _deps/doctest-build/clean
 
 #=============================================================================
 # Directory level rules for directory _deps/format.cmake-build
@@ -100,6 +119,51 @@ _deps/format.cmake-build/clean: _deps/format.cmake-build/CMakeFiles/format.dir/c
 _deps/format.cmake-build/clean: _deps/format.cmake-build/CMakeFiles/check-format.dir/clean
 _deps/format.cmake-build/clean: _deps/format.cmake-build/CMakeFiles/fix-format.dir/clean
 .PHONY : _deps/format.cmake-build/clean
+
+#=============================================================================
+# Directory level rules for directory advancedcpp
+
+# Recursive "all" directory target.
+advancedcpp/all: advancedcpp/01-introduction/all
+.PHONY : advancedcpp/all
+
+# Recursive "preinstall" directory target.
+advancedcpp/preinstall: advancedcpp/01-introduction/preinstall
+.PHONY : advancedcpp/preinstall
+
+# Recursive "clean" directory target.
+advancedcpp/clean: advancedcpp/01-introduction/clean
+.PHONY : advancedcpp/clean
+
+#=============================================================================
+# Directory level rules for directory advancedcpp/01-introduction
+
+# Recursive "all" directory target.
+advancedcpp/01-introduction/all: advancedcpp/01-introduction/actvities/all
+.PHONY : advancedcpp/01-introduction/all
+
+# Recursive "preinstall" directory target.
+advancedcpp/01-introduction/preinstall: advancedcpp/01-introduction/actvities/preinstall
+.PHONY : advancedcpp/01-introduction/preinstall
+
+# Recursive "clean" directory target.
+advancedcpp/01-introduction/clean: advancedcpp/01-introduction/actvities/clean
+.PHONY : advancedcpp/01-introduction/clean
+
+#=============================================================================
+# Directory level rules for directory advancedcpp/01-introduction/actvities
+
+# Recursive "all" directory target.
+advancedcpp/01-introduction/actvities/all: advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/all
+.PHONY : advancedcpp/01-introduction/actvities/all
+
+# Recursive "preinstall" directory target.
+advancedcpp/01-introduction/actvities/preinstall:
+.PHONY : advancedcpp/01-introduction/actvities/preinstall
+
+# Recursive "clean" directory target.
+advancedcpp/01-introduction/actvities/clean: advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/clean
+.PHONY : advancedcpp/01-introduction/actvities/clean
 
 #=============================================================================
 # Directory level rules for directory documentation
@@ -188,6 +252,32 @@ intro/04-conditionals/preinstall:
 # Recursive "clean" directory target.
 intro/04-conditionals/clean: intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean
 .PHONY : intro/04-conditionals/clean
+
+#=============================================================================
+# Target rules for target _deps/doctest-build/CMakeFiles/doctest_with_main.dir
+
+# All Build rule for target.
+_deps/doctest-build/CMakeFiles/doctest_with_main.dir/all:
+	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=15,16 "Built target doctest_with_main"
+.PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/doctest-build/CMakeFiles/doctest_with_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/doctest-build/CMakeFiles/doctest_with_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
+.PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/rule
+
+# Convenience name for target.
+doctest_with_main: _deps/doctest-build/CMakeFiles/doctest_with_main.dir/rule
+.PHONY : doctest_with_main
+
+# clean rule for target.
+_deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean
+.PHONY : _deps/doctest-build/CMakeFiles/doctest_with_main.dir/clean
 
 #=============================================================================
 # Target rules for target intro/02-tooling/CMakeFiles/02-hello.dir
@@ -370,6 +460,32 @@ intro/04-conditionals/CMakeFiles/04-coordinates.dir/rule: cmake_check_build_syst
 intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean:
 	$(MAKE) $(MAKESILENT) -f intro/04-conditionals/CMakeFiles/04-coordinates.dir/build.make intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean
 .PHONY : intro/04-conditionals/CMakeFiles/04-coordinates.dir/clean
+
+#=============================================================================
+# Target rules for target advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir
+
+# All Build rule for target.
+advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/all:
+	$(MAKE) $(MAKESILENT) -f advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/build.make advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/depend
+	$(MAKE) $(MAKESILENT) -f advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/build.make advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles --progress-num=13,14 "Built target adv-01-intro"
+.PHONY : advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/all
+
+# Build rule for subdir invocation for target.
+advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles 0
+.PHONY : advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/rule
+
+# Convenience name for target.
+adv-01-intro: advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/rule
+.PHONY : adv-01-intro
+
+# clean rule for target.
+advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/clean:
+	$(MAKE) $(MAKESILENT) -f advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/build.make advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/clean
+.PHONY : advancedcpp/01-introduction/actvities/CMakeFiles/adv-01-intro.dir/clean
 
 #=============================================================================
 # Target rules for target documentation/CMakeFiles/GenerateDocs.dir
@@ -641,6 +757,7 @@ _deps/format.cmake-build/CMakeFiles/fix-format.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

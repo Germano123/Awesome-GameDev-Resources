@@ -224,6 +224,18 @@ CPM_USE_LOCAL_PACKAGES:BOOL=OFF
 // nested level.
 CPM_USE_NAMED_CACHE_DIRECTORIES:BOOL=OFF
 
+//Skip the installation process
+DOCTEST_NO_INSTALL:BOOL=OFF
+
+//Use std headers
+DOCTEST_USE_STD_HEADERS:BOOL=OFF
+
+//Build a static lib (cmake target) with a default main entry point
+DOCTEST_WITH_MAIN_IN_STATIC_LIB:BOOL=ON
+
+//Build tests/examples
+DOCTEST_WITH_TESTS:BOOL=OFF
+
 //Dot tool for use with Doxygen
 DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
 
@@ -239,6 +251,9 @@ EMSCRIPTEN_FORCE_COMPILERS:BOOL=ON
 //If set, static library targets generate LLVM bitcode files (.bc).
 // If disabled (default), UNIX ar archives (.a) are generated.
 EMSCRIPTEN_GENERATE_BITCODE_STATIC_LIBRARIES:BOOL=OFF
+
+//ENABLE_ADVANCED_CPP
+ENABLE_ADVANCED_CPP:BOOL=ON
 
 //ENABLE_DOCUMENTATION
 ENABLE_DOCUMENTATION:BOOL=ON
@@ -262,8 +277,29 @@ FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
 //Enables QUIET option for all content population
 FETCHCONTENT_QUIET:BOOL=ON
 
+//When not empty, overrides where to find pre-populated content
+// for doctest
+FETCHCONTENT_SOURCE_DIR_DOCTEST:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for Format.cmake
+FETCHCONTENT_SOURCE_DIR_FORMAT.CMAKE:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for m.css
+FETCHCONTENT_SOURCE_DIR_M.CSS:PATH=
+
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of doctest
+FETCHCONTENT_UPDATES_DISCONNECTED_DOCTEST:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of Format.cmake
+FETCHCONTENT_UPDATES_DISCONNECTED_FORMAT.CMAKE:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of m.css
+FETCHCONTENT_UPDATES_DISCONNECTED_M.CSS:BOOL=OFF
 
 //Skip CMake formatting.
 FORMAT_SKIP_CMAKE:BOOL=OFF
@@ -273,6 +309,15 @@ GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
 //Path to a program.
 GIT_PROGRAM:FILEPATH=/usr/bin/git
+
+//Value Computed by CMake
+doctest_BINARY_DIR:STATIC=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/doctest-build
+
+//Value Computed by CMake
+doctest_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+doctest_SOURCE_DIR:STATIC=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09
 
 
 ########################
@@ -349,7 +394,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -396,11 +441,14 @@ CPM_DRY_RUN:INTERNAL=OFF
 CPM_FILE:INTERNAL=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/cpm_modules/cpm/CPM_v0.38.1.cmake
 CPM_INDENT:INTERNAL=CPM:
 CPM_MODULE_PATH:INTERNAL=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/CPM_modules
-CPM_PACKAGES:INTERNAL=m.css;Format.cmake
+CPM_PACKAGES:INTERNAL=doctest;m.css;Format.cmake
 CPM_PACKAGE_Format.cmake_BINARY_DIR:INTERNAL=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/format.cmake-build
 CPM_PACKAGE_Format.cmake_SOURCE_DIR:INTERNAL=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/cpm_modules/format.cmake/17e103764947115e78d95ecc29c4bee54dc64e08
 CPM_PACKAGE_Format.cmake_VERSION:INTERNAL=1.7.3
 CPM_PACKAGE_LOCK_FILE:INTERNAL=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/cpm-package-lock.cmake
+CPM_PACKAGE_doctest_BINARY_DIR:INTERNAL=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/doctest-build
+CPM_PACKAGE_doctest_SOURCE_DIR:INTERNAL=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/cpm_modules/doctest/bcdb6a7e830053e9c0f36212e2a34ef2a4b8fb09
+CPM_PACKAGE_doctest_VERSION:INTERNAL=2.4.8
 CPM_PACKAGE_m.css_BINARY_DIR:INTERNAL=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/m.css-build
 CPM_PACKAGE_m.css_SOURCE_DIR:INTERNAL=/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/cpm_modules/m.css/e895ba4b660ee764c6511109cdda941c90ea7c32
 CPM_PACKAGE_m.css_VERSION:INTERNAL=0
