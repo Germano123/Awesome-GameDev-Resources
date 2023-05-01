@@ -1,3 +1,0 @@
-/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/doctest-subbuild/CMakeFiles/doctest-populate.dir
-/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/doctest-subbuild/CMakeFiles/edit_cache.dir
-/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/doctest-subbuild/CMakeFiles/rebuild_cache.dir

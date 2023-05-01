@@ -1,3 +1,0 @@
-/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/m.css-subbuild/CMakeFiles/m.css-populate.dir
-/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/m.css-subbuild/CMakeFiles/edit_cache.dir
-/__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/_deps/m.css-subbuild/CMakeFiles/rebuild_cache.dir
