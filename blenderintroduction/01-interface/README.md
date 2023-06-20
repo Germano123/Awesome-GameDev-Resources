@@ -4,7 +4,7 @@ Iremos agora fazer um rápido overview sobre como baixar e instalar o software. 
 
 Agora sim. Bem-vindo ao Blender 3D!
 
-[image 01]
+[image 01]()
 
 Ao abrir o programa você verá algumas abas e diversas opções de interações. Nem sempre o Blender foi tão lindo desse jeito, devemos agradecer aos mantenedores da ferramenta. O mais importante agora é nos familiarizar com a ferramenta e pra isso, vamos clicar fora do pop-up inicial e começar a explorar os comandos básicos da interface. Nesse momento temos várias abas e podemos explorar o que as abas mais comuns fazem.
 

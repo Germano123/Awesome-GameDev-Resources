@@ -37,6 +37,11 @@ nav:
   - Dojo:
       - dojo/README.md
       - Full Cycle Game Dev: dojo/Full-Cycle-SDL-Development.md
+  - Blender:
+    - Intro:
+      - blenderintroduction/00-basics/README.md
+    - Intermediate:
+      - blenderintroduction/00-basics/README.md
 #  - AI:
 #      - artificialintelligence/README.md
 
